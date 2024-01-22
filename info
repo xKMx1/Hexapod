@@ -1,0 +1,163 @@
+{
+  "uuid": "468dc87d4eab9ff44d97f5b4a6938450",
+  "path": "Offline/Hexapod_PCB",
+  "name": "Hexapod_PCB",
+  "content": "",
+  "created_at": "2024-01-21 22:38:11",
+  "updated_at": "2024-01-22 14:21:35",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "6d965602add2dc1c1167fa6de70dd72b",
+      "title": "Sheet_1",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "dd2ec8381a8e43818e312c97dfccb550": 1,
+        "f86cd34604c048a292b8541989a4abf2": 5,
+        "746cf3ea25a54325897eee519a3f347a": 1,
+        "56847017f79945d7b69ee120b62af598": 1,
+        "d69fc96d0dba48439b1702487982026f": 6,
+        "1480fc5dcc974bf9b9f4000408c92668": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "Dynamixel_Molex",
+          6,
+          "MOLEX_22-03-5035_3WAY_FOOTPRINT",
+          "J1,J2,J3,J4,J5,J6",
+          {
+            "Manufacturer": "",
+            "Manufacturer Part": "",
+            "Supplier Part": "",
+            "Supplier": "",
+            "link": "",
+            "Contributor": "Sam Gilligan",
+            "spiceSymbolName": "Dynamixel_Molex",
+            "puuid": "34b983f47af145629a60ecd8cec1227f",
+            "uuid": "d69fc96d0dba48439b1702487982026f"
+          }
+        ],
+        [
+          "BC558B",
+          1,
+          "TO-92-3_L4.9-W3.7-P1.27-L",
+          "Q1",
+          {
+            "Contributor": "LCSC",
+            "Supplier": "LCSC",
+            "Supplier Part": "C713619",
+            "Manufacturer": "LGE(鲁光)",
+            "Manufacturer Part": "BC558B",
+            "JLCPCB Part Class": "Extended Part",
+            "spiceSymbolName": "BC558B",
+            "puuid": "6924b36489de4921bb29ca14bf27c33f",
+            "uuid": "dd2ec8381a8e43818e312c97dfccb550"
+          }
+        ],
+        [
+          "10k",
+          4,
+          "RES-TH_BD1.9-L3.3-P7.30-D0.5",
+          "R1,R2,R3,R4",
+          {
+            "Contributor": "LCSC",
+            "Supplier": "LCSC",
+            "Supplier Part": "C172621",
+            "Manufacturer": "台湾大毅",
+            "Manufacturer Part": "RN16T51052F",
+            "JLCPCB Part Class": "Extended Part",
+            "spiceSymbolName": "RN16T51052F",
+            "puuid": "bce07507d1784cf5b946447ae8191a57",
+            "uuid": "f86cd34604c048a292b8541989a4abf2"
+          }
+        ],
+        [
+          "1k",
+          1,
+          "RES-TH_BD1.9-L3.3-P7.30-D0.5",
+          "R5",
+          {
+            "Contributor": "LCSC",
+            "Supplier": "LCSC",
+            "Supplier Part": "C172621",
+            "Manufacturer": "台湾大毅",
+            "Manufacturer Part": "RN16T51052F",
+            "JLCPCB Part Class": "Extended Part",
+            "spiceSymbolName": "RN16T51052F",
+            "puuid": "bce07507d1784cf5b946447ae8191a57",
+            "uuid": "f86cd34604c048a292b8541989a4abf2"
+          }
+        ],
+        [
+          "74LVC125AD/AU118",
+          1,
+          "SO-14_L8.7-W3.9-P1.27-LS6.0-BL",
+          "U1",
+          {
+            "Contributor": "lcsc",
+            "Supplier": "LCSC",
+            "Supplier Part": "C3756036",
+            "Manufacturer": "NXP(恩智浦)",
+            "Manufacturer Part": "74LVC125AD/AU118",
+            "spiceSymbolName": "74LVC125AD/AU118",
+            "puuid": "5348c6e027c344959c8fedcead8c169e",
+            "uuid": "746cf3ea25a54325897eee519a3f347a"
+          }
+        ],
+        [
+          "74LVC14AD-Q100118",
+          1,
+          "SO-14_L8.7-W3.9-P1.27-LS6.0-BL",
+          "U2",
+          {
+            "Contributor": "lcsc",
+            "Supplier": "LCSC",
+            "Supplier Part": "C4469886",
+            "Manufacturer": "NXP(恩智浦)",
+            "Manufacturer Part": "74LVC14AD-Q100118",
+            "spiceSymbolName": "74LVC14AD-Q100118",
+            "puuid": "5348c6e027c344959c8fedcead8c169e",
+            "uuid": "56847017f79945d7b69ee120b62af598"
+          }
+        ],
+        [
+          "XT60PB-M",
+          1,
+          "CONN-TH_XT60PB-M",
+          "U3",
+          {
+            "Contributor": "lcsc",
+            "Supplier": "LCSC",
+            "Supplier Part": "C9900017179",
+            "Manufacturer": "null",
+            "Manufacturer Part": "XT60PB-M",
+            "JLCPCB Part Class": "Extended Part",
+            "spiceSymbolName": "XT60PB-M",
+            "puuid": "90874cf70dee44e88956e0cb540e071d",
+            "uuid": "1480fc5dcc974bf9b9f4000408c92668"
+          }
+        ]
+      ],
+      "updateTime": 1705929695,
+      "createTime": 1705873091,
+      "histories": [],
+      "created_at": "2024-01-21 22:38:11",
+      "updated_at": "2024-01-22 14:21:35"
+    }
+  ],
+  "sort": [],
+  "title": "Hexapod_PCB",
+  "foldername": "Hexapod_PCB",
+  "schfilename": "Hexapod_PCB.json",
+  "schfilemtime": 1705929695968
+}
