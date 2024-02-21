@@ -13,6 +13,6 @@
     ],
     "idf.pythonBinPathWin": "C:\\Users\\kamil\\.espressif\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe",
     "idf.toolsPathWin": "C:\\Users\\kamil\\.espressif",
-    "idf.portWin": "COM4",
-    "idf.flashType": "JTAG"
+    "idf.portWin": "COM9",
+    "idf.flashType": "UART"
 }
