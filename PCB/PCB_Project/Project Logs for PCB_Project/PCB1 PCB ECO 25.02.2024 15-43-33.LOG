@@ -1,0 +1,22 @@
+Removed Pin From Net: NetName=GND Pin=*-7
+Removed Pin From Net: NetName=GND Pin=I-7
+Removed Member From Class: ClassName=Sheet Member=*
+Removed Member From Class: ClassName=Sheet Member=I
+Add Component: Footprint Not Found ESP32-S3-DevKit footprint
+Added Component: Designator=I?(SOP14)
+Added Component: Designator=I?(SOP14)
+Added Pin To Net: NetName=GND Pin=I?-7
+Added Pin To Net: NetName=GND Pin=I?-7
+Added Pin To Net: NetName=3V3 Pin=I?-8
+Added Pin To Net: NetName=3V3 Pin=I?-8
+Added Net: Name=3V3
+Added Pin To Net: NetName=TXEN Pin=I?-1
+Added Pin To Net: NetName=TXEN Pin=I?-2
+Added Pin To Net: NetName=TXEN Pin=I?-3
+Added Pin To Net: NetName=TXEN Pin=I?-4
+Added Pin To Net: NetName=TXEN Pin=I?-5
+Added Pin To Net: NetName=TXEN Pin=I?-6
+Added Net: Name=TXEN
+Add Class Member: Failed to add class member : Component DK? ESP32-S3
+Added Member To Class: ClassName=Sheet Member=Component I? 74LVC125A
+Added Member To Class: ClassName=Sheet Member=Component I? 74LVC14AD

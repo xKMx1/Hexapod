@@ -1,0 +1,6 @@
+Added Component: Designator=*(SOP14)
+Added Component: Designator=I(SOP14)
+Added Pin To Net: NetName=GND Pin=*-7
+Added Pin To Net: NetName=GND Pin=I-7
+Added Member To Class: ClassName=Sheet Member=Component * 74LVC14AD
+Added Member To Class: ClassName=Sheet Member=Component I 74LVC125A
