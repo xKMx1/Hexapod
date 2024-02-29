@@ -17,7 +17,7 @@ void app_main(void)
         uint16_t response1 = AX_servo_get_pos(conf, 1);
         AX_servo_set_pos_w_spd(conf, 1, 702, 1023);
 
-        printf("%d", response1);
+        //printf("%d", response1);
         vTaskDelay(3000/portTICK_PERIOD_MS);
 
         AX_servo_set_max_torque(conf, 1, 512);
