@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=RXEN Pin=I?-4
+Removed Pin From Net: NetName=SERVO_DATA Pin=I?-5
+Removed Pin From Net: NetName=RX Pin=I?-6
+Added Pin To Net: NetName=RXEN Pin=I?-12
+Added Pin To Net: NetName=SERVO_DATA Pin=I?-13
+Added Pin To Net: NetName=RX Pin=I?-14
+Added Member To Class: ClassName=Sheet Member=Component C? MOLEX 22-03-5035
+Added Member To Class: ClassName=Sheet Member=Component C? MOLEX 22-03-5035
+Added Member To Class: ClassName=Sheet Member=Component C? MOLEX 22-03-5035
+Added Member To Class: ClassName=Sheet Member=Component C? MOLEX 22-03-5035
+Added Member To Class: ClassName=Sheet Member=Component C? MOLEX 22-03-5035
+Added Member To Class: ClassName=Sheet Member=Component I? 74LVC14AD
+Added Member To Class: ClassName=Sheet Member=Component R? 10k
+Added Member To Class: ClassName=Sheet Member=Component R? 10k
