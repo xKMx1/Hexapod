@@ -1,10 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : D:\Projects\Robotics\Hexapod\PCB\PCB_Project\PCB1.PcbDoc
-Date     : 29.02.2024
-Time     : 22:31:20
-
-Processing Rule : Clearance Constraint (Gap=0.2mm) (All),(All)
-Rule Violations :0
+Date     : 27.03.2024
+Time     : 22:15:57
 
 Processing Rule : Clearance Constraint (Gap=0.254mm) (All),(All)
 Rule Violations :0
@@ -45,10 +42,16 @@ Rule Violations :0
 Processing Rule : Net Antennae (Tolerance=0mm) (All)
 Rule Violations :0
 
+Processing Rule : Board Clearance Constraint (Gap=0mm) (All)
+Rule Violations :0
+
+Processing Rule : Board Clearance Constraint (Gap=0mm) (All)
+Rule Violations :0
+
 Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
 Rule Violations :0
 
 
 Violations Detected : 0
 Waived Violations : 0
-Time Elapsed        : 00:00:02
+Time Elapsed        : 00:00:01
