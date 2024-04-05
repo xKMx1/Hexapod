@@ -1,0 +1,23 @@
+Change Component Designator: OldDesignator=* NewDesignator=C7
+Change Component Designator: OldDesignator=* NewDesignator=C8
+Change Component Designator: OldDesignator=C? NewDesignator=C1
+Change Component Designator: OldDesignator=C? NewDesignator=C2
+Change Component Designator: OldDesignator=C? NewDesignator=C3
+Change Component Designator: OldDesignator=C? NewDesignator=C4
+Change Component Designator: OldDesignator=C? NewDesignator=C5
+Change Component Designator: OldDesignator=C? NewDesignator=C6
+Change Component Designator: OldDesignator=DK? NewDesignator=DK1
+Change Component Designator: OldDesignator=I? NewDesignator=I1
+Change Component Designator: OldDesignator=I? NewDesignator=I2
+Change Component Designator: OldDesignator=R? NewDesignator=R1
+Change Component Designator: OldDesignator=R? NewDesignator=R2
+Change Component Designator: OldDesignator=R? NewDesignator=R3
+Added Member To Class: ClassName=hexapod_board_schematics Member=Component C1 MOLEX 22-03-5035
+Added Member To Class: ClassName=hexapod_board_schematics Member=Component C2 MOLEX 22-03-5035
+Added Member To Class: ClassName=hexapod_board_schematics Member=Component C3 MOLEX 22-03-5035
+Added Member To Class: ClassName=hexapod_board_schematics Member=Component C5 MOLEX 22-03-5035
+Added Member To Class: ClassName=hexapod_board_schematics Member=Component C6 MOLEX 22-03-5035
+Added Member To Class: ClassName=hexapod_board_schematics Member=Component C8 ARK connector 5mm
+Added Member To Class: ClassName=hexapod_board_schematics Member=Component I2 74LVC14AD
+Added Member To Class: ClassName=hexapod_board_schematics Member=Component R1 10k
+Added Member To Class: ClassName=hexapod_board_schematics Member=Component R3 10k
