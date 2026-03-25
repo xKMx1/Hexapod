@@ -1,2 +1,94 @@
-.gcode
-3DPrinterFiles
+# 3D model
+
+3DModel/3DPrinterFiles
+*.gcode
+OldVersions
+*.iam
+*.dwg
+
+# Webots
+
+worlds/*.wbproj
+controllers/*/build/
+controllers/*/*.o
+controllers/*/*.d
+
+# Code
+
+.vscode/
+.devcontainer/
+build/
+**/sdkconfig.old
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+wheels/
+*.egg-link
+.installed.cfg
+lib/
+lib64/
+pip-selfcheck.json
+.venv/
+venv/
+env/
+ENV/
+.env
+*.o
+*.d
+*.elf
+*.bin
+*.map
+*.lst
+*.a
+*.so
+*.out
+dependencies.lock
+managed_components/
+esp-idf/
+.espressif/
+
+# RL
+
+logs/
+runs/
+checkpoints/
+models/saved/
+tensorboard_logs/
+wandb/
+*.zip
+!requirements.txt
+
+# Models
+
+*.onnx
+*.tflite
+*.pb
+*.h5
+*.pt
+*.pth
+
+# Data
+
+*.csv
+*.log
+*.pkl
+*.npy
+*.npz
+data/raw/
+data/processed/
+
+# PCB
+
+HistoryProject Logs for Hexapod_board/
+**/Constraints.xml
+**/Hexapod_board.html

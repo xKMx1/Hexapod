@@ -1,0 +1,912 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/Plastic.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/BlanketFabric.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/BrushedSteel.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.42180003227370094 -0.4273996683502797 -0.7996338263655282 4.503504786608584
+  position -0.03310456205405488 -1.1406743787472802 1.6437157790439727
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 10 10
+}
+Robot {
+  translation -2.3153084548360565e-05 -8.460879043546723e-06 0.019783806762290586
+  rotation 0.17855166290337668 -0.9837453666113637 -0.019088146717602957 0.0007744642965828971
+  children [
+    DEF RB HingeJoint {
+      jointParameters HingeJointParameters {
+        position 2.5319709807680525e-08
+        axis 0 0 1
+        anchor 0.04 -0.06 0
+      }
+      device [
+        RotationalMotor {
+          name "coax_rb_motor"
+        }
+        PositionSensor {
+          name "coax_rb_sensor"
+        }
+      ]
+      endPoint Solid {
+        translation 0.0399999999999994 -0.06000000202557678 0
+        rotation 0 0 1 3.14159
+        children [
+          Solid {
+            translation -0.02 0 0
+            children [
+              HingeJoint {
+                jointParameters HingeJointParameters {
+                  position 1.580790420872768e-08
+                  axis 0 1 0
+                  anchor -0.02 0 0
+                }
+                device [
+                  RotationalMotor {
+                    name "femur_rb_motor"
+                  }
+                  PositionSensor {
+                    name "femur_rb_sensor"
+                  }
+                ]
+                endPoint Solid {
+                  translation -0.02 -6.74617e-14 2.51031e-13
+                  rotation 1 7.903923110832198e-09 -7.90395212398996e-09 1.5707999999999998
+                  children [
+                    Solid {
+                      translation -0.04 0 0
+                      rotation 1 0 0 1.5708
+                      children [
+                        HingeJoint {
+                          jointParameters HingeJointParameters {
+                            axis 0 1 0
+                            anchor -0.04 0 0
+                          }
+                          device [
+                            RotationalMotor {
+                              name "tibia_rb_motor"
+                            }
+                            PositionSensor {
+                              name "tibia_rb_sensor"
+                            }
+                          ]
+                          endPoint Solid {
+                            translation -0.04 0 0
+                            rotation 1 0 0 1.5708
+                            children [
+                              Solid {
+                                translation -0.04 0 0
+                                children [
+                                  DEF tibia_extention_shape Shape {
+                                    appearance BrushedSteel {
+                                    }
+                                    geometry Box {
+                                      size 0.07 0.01 0.02
+                                    }
+                                  }
+                                ]
+                                boundingObject USE tibia_extention_shape
+                                physics Physics {
+                                }
+                              }
+                              DEF tibia_motor_shape Shape {
+                                appearance BrushedSteel {
+                                }
+                                geometry Cylinder {
+                                  height 0.03
+                                  radius 0.01
+                                }
+                              }
+                            ]
+                            boundingObject USE tibia_motor_shape
+                            physics Physics {
+                            }
+                          }
+                        }
+                        DEF temur_extention_shape Shape {
+                          appearance BlanketFabric {
+                          }
+                          geometry Box {
+                            size 0.07 0.02 0.01
+                          }
+                        }
+                      ]
+                      boundingObject USE temur_extention_shape
+                      physics Physics {
+                      }
+                    }
+                    DEF temur_motor_shape Shape {
+                      appearance BlanketFabric {
+                      }
+                      geometry Cylinder {
+                        height 0.025
+                        radius 0.01
+                      }
+                    }
+                  ]
+                  boundingObject USE temur_motor_shape
+                  physics Physics {
+                  }
+                }
+              }
+              DEF coax_extention_shape Shape {
+                appearance Plastic {
+                }
+                geometry Box {
+                  size 0.04 0.01 0.02
+                }
+              }
+            ]
+            boundingObject USE coax_extention_shape
+            physics Physics {
+            }
+          }
+          DEF coax_motor_shape Shape {
+            appearance DEF leg_appearance Appearance {
+              material Material {
+                diffuseColor 0.615686 0.505882 0.505882
+              }
+            }
+            geometry Cylinder {
+              height 0.025
+              radius 0.01
+            }
+          }
+        ]
+        name "solid(5)"
+        boundingObject USE coax_motor_shape
+        physics Physics {
+        }
+      }
+    }
+    DEF RM HingeJoint {
+      jointParameters HingeJointParameters {
+        position 2.5319709807680525e-08
+        axis 0 0 1
+        anchor 0.04 0 0
+      }
+      device [
+        RotationalMotor {
+          name "coax_rm_motor"
+        }
+        PositionSensor {
+          name "coax_rm_sensor"
+        }
+      ]
+      endPoint Solid {
+        translation 0.04000000151918168 -2.0255418693477274e-09 0
+        rotation 0 0 1 3.14159
+        children [
+          Solid {
+            translation -0.02 0 0
+            children [
+              HingeJoint {
+                jointParameters HingeJointParameters {
+                  position 1.580790420872768e-08
+                  axis 0 1 0
+                  anchor -0.02 0 0
+                }
+                device [
+                  RotationalMotor {
+                    name "femur_rm_motor"
+                  }
+                  PositionSensor {
+                    name "femur_rm_sensor"
+                  }
+                ]
+                endPoint Solid {
+                  translation -0.02 -6.74617e-14 2.51031e-13
+                  rotation 1 7.903923110832198e-09 -7.90395212398996e-09 1.5707999999999998
+                  children [
+                    Solid {
+                      translation -0.04 0 0
+                      rotation 1 0 0 1.5708
+                      children [
+                        HingeJoint {
+                          jointParameters HingeJointParameters {
+                            axis 0 1 0
+                            anchor -0.04 0 0
+                          }
+                          device [
+                            RotationalMotor {
+                              name "tibia_rm_motor"
+                            }
+                            PositionSensor {
+                              name "tibia_rm_sensor"
+                            }
+                          ]
+                          endPoint Solid {
+                            translation -0.04 0 0
+                            rotation 1 0 0 1.5708
+                            children [
+                              Solid {
+                                translation -0.04 0 0
+                                children [
+                                  DEF tibia_extention_shape Shape {
+                                    appearance BrushedSteel {
+                                    }
+                                    geometry Box {
+                                      size 0.07 0.01 0.02
+                                    }
+                                  }
+                                ]
+                                boundingObject USE tibia_extention_shape
+                                physics Physics {
+                                }
+                              }
+                              DEF tibia_motor_shape Shape {
+                                appearance BrushedSteel {
+                                }
+                                geometry Cylinder {
+                                  height 0.03
+                                  radius 0.01
+                                }
+                              }
+                            ]
+                            boundingObject USE tibia_motor_shape
+                            physics Physics {
+                            }
+                          }
+                        }
+                        DEF temur_extention_shape Shape {
+                          appearance BlanketFabric {
+                          }
+                          geometry Box {
+                            size 0.07 0.02 0.01
+                          }
+                        }
+                      ]
+                      boundingObject USE temur_extention_shape
+                      physics Physics {
+                      }
+                    }
+                    DEF temur_motor_shape Shape {
+                      appearance BlanketFabric {
+                      }
+                      geometry Cylinder {
+                        height 0.025
+                        radius 0.01
+                      }
+                    }
+                  ]
+                  boundingObject USE temur_motor_shape
+                  physics Physics {
+                  }
+                }
+              }
+              DEF coax_extention_shape Shape {
+                appearance Plastic {
+                }
+                geometry Box {
+                  size 0.04 0.01 0.02
+                }
+              }
+            ]
+            boundingObject USE coax_extention_shape
+            physics Physics {
+            }
+          }
+          DEF coax_motor_shape Shape {
+            appearance DEF leg_appearance Appearance {
+              material Material {
+                diffuseColor 0.615686 0.505882 0.505882
+              }
+            }
+            geometry Cylinder {
+              height 0.025
+              radius 0.01
+            }
+          }
+        ]
+        name "solid(4)"
+        boundingObject USE coax_motor_shape
+        physics Physics {
+        }
+      }
+    }
+    DEF RF HingeJoint {
+      jointParameters HingeJointParameters {
+        position 2.5319709807680525e-08
+        axis 0 0 1
+        anchor 0.04 0.06 0
+      }
+      device [
+        RotationalMotor {
+          name "coax_rf_motor"
+        }
+        PositionSensor {
+          name "coax_rf_sensor"
+        }
+      ]
+      endPoint Solid {
+        translation 0.04000000303836459 0.05999999797442264 0
+        rotation 0 0 1 3.14159
+        children [
+          Solid {
+            translation -0.02 0 0
+            children [
+              HingeJoint {
+                jointParameters HingeJointParameters {
+                  position 1.580790420872768e-08
+                  axis 0 1 0
+                  anchor -0.02 0 0
+                }
+                device [
+                  RotationalMotor {
+                    name "femur_rf_motor"
+                  }
+                  PositionSensor {
+                    name "femur_rf_sensor"
+                  }
+                ]
+                endPoint Solid {
+                  translation -0.02 -6.74617e-14 2.510316730636445e-13
+                  rotation 1 7.903923110832198e-09 -7.90395210436384e-09 1.5707999999999998
+                  children [
+                    Solid {
+                      translation -0.04 0 0
+                      rotation 1 0 0 1.5708
+                      children [
+                        HingeJoint {
+                          jointParameters HingeJointParameters {
+                            axis 0 1 0
+                            anchor -0.04 0 0
+                          }
+                          device [
+                            RotationalMotor {
+                              name "tibia_rf_motor"
+                            }
+                            PositionSensor {
+                              name "tibia_rf_sensor"
+                            }
+                          ]
+                          endPoint Solid {
+                            translation -0.04 0 0
+                            rotation 1 3.925223937639758e-17 0 1.5708
+                            children [
+                              Solid {
+                                translation -0.04 0 0
+                                children [
+                                  DEF tibia_extention_shape Shape {
+                                    appearance BrushedSteel {
+                                    }
+                                    geometry Box {
+                                      size 0.07 0.01 0.02
+                                    }
+                                  }
+                                ]
+                                boundingObject USE tibia_extention_shape
+                                physics Physics {
+                                }
+                              }
+                              DEF tibia_motor_shape Shape {
+                                appearance BrushedSteel {
+                                }
+                                geometry Cylinder {
+                                  height 0.03
+                                  radius 0.01
+                                }
+                              }
+                            ]
+                            boundingObject USE tibia_motor_shape
+                            physics Physics {
+                            }
+                          }
+                        }
+                        DEF temur_extention_shape Shape {
+                          appearance BlanketFabric {
+                          }
+                          geometry Box {
+                            size 0.07 0.02 0.01
+                          }
+                        }
+                      ]
+                      boundingObject USE temur_extention_shape
+                      physics Physics {
+                      }
+                    }
+                    DEF temur_motor_shape Shape {
+                      appearance BlanketFabric {
+                      }
+                      geometry Cylinder {
+                        height 0.025
+                        radius 0.01
+                      }
+                    }
+                  ]
+                  boundingObject USE temur_motor_shape
+                  physics Physics {
+                  }
+                }
+              }
+              DEF coax_extention_shape Shape {
+                appearance Plastic {
+                }
+                geometry Box {
+                  size 0.04 0.01 0.02
+                }
+              }
+            ]
+            boundingObject USE coax_extention_shape
+            physics Physics {
+            }
+          }
+          DEF coax_motor_shape Shape {
+            appearance DEF leg_appearance Appearance {
+              material Material {
+                diffuseColor 0.615686 0.505882 0.505882
+              }
+            }
+            geometry Cylinder {
+              height 0.025
+              radius 0.01
+            }
+          }
+        ]
+        name "solid(3)"
+        boundingObject USE coax_motor_shape
+        physics Physics {
+        }
+      }
+    }
+    DEF LF HingeJoint {
+      jointParameters HingeJointParameters {
+        position 2.5319709807680525e-08
+        axis 0 0 1
+        anchor -0.04 0.06 0
+      }
+      device [
+        RotationalMotor {
+          name "coax_lf_motor"
+        }
+        PositionSensor {
+          name "coax_lf_sensor"
+        }
+      ]
+      endPoint Solid {
+        translation -0.03999999696163482 0.05999999999999935 0
+        rotation 0 0 0.9999999999999999 2.9802322387695313e-08
+        children [
+          Solid {
+            translation -0.02 0 0
+            children [
+              HingeJoint {
+                jointParameters HingeJointParameters {
+                  position 1.580790420872768e-08
+                  axis 0 1 0
+                  anchor -0.02 0 0
+                }
+                device [
+                  RotationalMotor {
+                    name "femur_lf_motor"
+                  }
+                  PositionSensor {
+                    name "femur_lf_sensor"
+                  }
+                ]
+                endPoint Solid {
+                  translation -0.02 -6.74617e-14 2.51031e-13
+                  rotation 1 7.903923110832198e-09 -7.90395212398996e-09 1.5707999999999998
+                  children [
+                    Solid {
+                      translation -0.04 0 0
+                      rotation 1 0 0 1.5708
+                      children [
+                        HingeJoint {
+                          jointParameters HingeJointParameters {
+                            axis 0 1 0
+                            anchor -0.04 0 0
+                          }
+                          device [
+                            RotationalMotor {
+                              name "tibia_lf_motor"
+                            }
+                            PositionSensor {
+                              name "tibia_lf_sensor"
+                            }
+                          ]
+                          endPoint Solid {
+                            translation -0.04 0 0
+                            rotation 1 0 0 1.5708
+                            children [
+                              Solid {
+                                translation -0.04 0 0
+                                children [
+                                  DEF tibia_extention_shape Shape {
+                                    appearance BrushedSteel {
+                                    }
+                                    geometry Box {
+                                      size 0.07 0.01 0.02
+                                    }
+                                  }
+                                ]
+                                boundingObject USE tibia_extention_shape
+                                physics Physics {
+                                }
+                              }
+                              DEF tibia_motor_shape Shape {
+                                appearance BrushedSteel {
+                                }
+                                geometry Cylinder {
+                                  height 0.03
+                                  radius 0.01
+                                }
+                              }
+                            ]
+                            boundingObject USE tibia_motor_shape
+                            physics Physics {
+                            }
+                          }
+                        }
+                        DEF temur_extention_shape Shape {
+                          appearance BlanketFabric {
+                          }
+                          geometry Box {
+                            size 0.07 0.02 0.01
+                          }
+                        }
+                      ]
+                      boundingObject USE temur_extention_shape
+                      physics Physics {
+                      }
+                    }
+                    DEF temur_motor_shape Shape {
+                      appearance BlanketFabric {
+                      }
+                      geometry Cylinder {
+                        height 0.025
+                        radius 0.01
+                      }
+                    }
+                  ]
+                  boundingObject USE temur_motor_shape
+                  physics Physics {
+                  }
+                }
+              }
+              DEF coax_extention_shape Shape {
+                appearance Plastic {
+                }
+                geometry Box {
+                  size 0.04 0.01 0.02
+                }
+              }
+            ]
+            boundingObject USE coax_extention_shape
+            physics Physics {
+            }
+          }
+          DEF coax_motor_shape Shape {
+            appearance DEF leg_appearance Appearance {
+              material Material {
+                diffuseColor 0.615686 0.505882 0.505882
+              }
+            }
+            geometry Cylinder {
+              height 0.025
+              radius 0.01
+            }
+          }
+        ]
+        name "solid(2)"
+        boundingObject USE coax_motor_shape
+        physics Physics {
+        }
+      }
+    }
+    DEF LM HingeJoint {
+      jointParameters HingeJointParameters {
+        position 2.5319709807680525e-08
+        axis 0 0 1
+        anchor -0.04 0 0
+      }
+      device [
+        RotationalMotor {
+          name "coax_lm_motor"
+        }
+        PositionSensor {
+          name "coax_lm_sensor"
+        }
+      ]
+      endPoint Solid {
+        translation -0.039999998480817416 -2.9460164518320056e-16 0
+        rotation 0 0 0.9999999999999999 2.9802322387695313e-08
+        children [
+          Solid {
+            translation -0.02 0 0
+            children [
+              HingeJoint {
+                jointParameters HingeJointParameters {
+                  position 1.580790420872768e-08
+                  axis 0 1 0
+                  anchor -0.02 0 0
+                }
+                device [
+                  RotationalMotor {
+                    name "femur_lm_motor"
+                  }
+                  PositionSensor {
+                    name "femur_lm_sensor"
+                  }
+                ]
+                endPoint Solid {
+                  translation -0.02 -6.74617e-14 2.51031e-13
+                  rotation 1 7.903923110832198e-09 -7.90395212398996e-09 1.5707999999999998
+                  children [
+                    Solid {
+                      translation -0.04 0 0
+                      rotation 1 0 0 1.5708
+                      children [
+                        HingeJoint {
+                          jointParameters HingeJointParameters {
+                            axis 0 1 0
+                            anchor -0.04 0 0
+                          }
+                          device [
+                            RotationalMotor {
+                              name "tibia_lm_motor"
+                            }
+                            PositionSensor {
+                              name "tibia_lm_sensor"
+                            }
+                          ]
+                          endPoint Solid {
+                            translation -0.04 0 0
+                            rotation 1 0 0 1.5708
+                            children [
+                              Solid {
+                                translation -0.04 0 0
+                                children [
+                                  DEF tibia_extention_shape Shape {
+                                    appearance BrushedSteel {
+                                    }
+                                    geometry Box {
+                                      size 0.07 0.01 0.02
+                                    }
+                                  }
+                                ]
+                                boundingObject USE tibia_extention_shape
+                                physics Physics {
+                                }
+                              }
+                              DEF tibia_motor_shape Shape {
+                                appearance BrushedSteel {
+                                }
+                                geometry Cylinder {
+                                  height 0.03
+                                  radius 0.01
+                                }
+                              }
+                            ]
+                            boundingObject USE tibia_motor_shape
+                            physics Physics {
+                            }
+                          }
+                        }
+                        DEF temur_extention_shape Shape {
+                          appearance BlanketFabric {
+                          }
+                          geometry Box {
+                            size 0.07 0.02 0.01
+                          }
+                        }
+                      ]
+                      boundingObject USE temur_extention_shape
+                      physics Physics {
+                      }
+                    }
+                    DEF temur_motor_shape Shape {
+                      appearance BlanketFabric {
+                      }
+                      geometry Cylinder {
+                        height 0.025
+                        radius 0.01
+                      }
+                    }
+                  ]
+                  boundingObject USE temur_motor_shape
+                  physics Physics {
+                  }
+                }
+              }
+              DEF coax_extention_shape Shape {
+                appearance Plastic {
+                }
+                geometry Box {
+                  size 0.04 0.01 0.02
+                }
+              }
+            ]
+            boundingObject USE coax_extention_shape
+            physics Physics {
+            }
+          }
+          DEF coax_motor_shape Shape {
+            appearance DEF leg_appearance Appearance {
+              material Material {
+                diffuseColor 0.615686 0.505882 0.505882
+              }
+            }
+            geometry Cylinder {
+              height 0.025
+              radius 0.01
+            }
+          }
+        ]
+        name "solid(1)"
+        boundingObject USE coax_motor_shape
+        physics Physics {
+        }
+      }
+    }
+    DEF LB HingeJoint {
+      jointParameters HingeJointParameters {
+        position 2.5319709807680525e-08
+        axis 0 0 1
+        anchor -0.04 -0.06 0
+      }
+      device [
+        RotationalMotor {
+          name "coax_lb_motor"
+        }
+        PositionSensor {
+          name "coax_lb_sensor"
+        }
+      ]
+      endPoint Solid {
+        translation -0.04 -0.06 0
+        rotation 0 0 0.9999999999999999 2.9802322387695313e-08
+        children [
+          Solid {
+            translation -0.02 0 0
+            children [
+              HingeJoint {
+                jointParameters HingeJointParameters {
+                  position 1.580790420872768e-08
+                  axis 0 1 0
+                  anchor -0.02 0 0
+                }
+                device [
+                  RotationalMotor {
+                    name "femur_lb_motor"
+                  }
+                  PositionSensor {
+                    name "femur_lb_sensor"
+                  }
+                ]
+                endPoint Solid {
+                  translation -0.020000000000000004 0 -4.607858684616543e-19
+                  rotation 1 7.903923110832198e-09 -7.90395212398996e-09 1.5707999999999998
+                  children [
+                    Solid {
+                      translation -0.04 0 0
+                      rotation 1 0 0 1.5708
+                      children [
+                        HingeJoint {
+                          jointParameters HingeJointParameters {
+                            axis 0 1 0
+                            anchor -0.04 0 0
+                          }
+                          device [
+                            RotationalMotor {
+                              name "tibia_lb_motor"
+                            }
+                            PositionSensor {
+                              name "tibia_lb_sensor"
+                            }
+                          ]
+                          endPoint Solid {
+                            translation -0.04 0 0
+                            rotation 1 0 0 1.5708
+                            children [
+                              Solid {
+                                translation -0.04 0 0
+                                children [
+                                  DEF tibia_extention_shape Shape {
+                                    appearance BrushedSteel {
+                                    }
+                                    geometry Box {
+                                      size 0.07 0.01 0.02
+                                    }
+                                  }
+                                ]
+                                boundingObject USE tibia_extention_shape
+                                physics Physics {
+                                }
+                              }
+                              DEF tibia_motor_shape Shape {
+                                appearance BrushedSteel {
+                                }
+                                geometry Cylinder {
+                                  height 0.03
+                                  radius 0.01
+                                }
+                              }
+                            ]
+                            boundingObject USE tibia_motor_shape
+                            physics Physics {
+                            }
+                          }
+                        }
+                        DEF temur_extention_shape Shape {
+                          appearance BlanketFabric {
+                          }
+                          geometry Box {
+                            size 0.07 0.02 0.01
+                          }
+                        }
+                      ]
+                      boundingObject USE temur_extention_shape
+                      physics Physics {
+                      }
+                    }
+                    DEF temur_motor_shape Shape {
+                      appearance BlanketFabric {
+                      }
+                      geometry Cylinder {
+                        height 0.025
+                        radius 0.01
+                      }
+                    }
+                  ]
+                  boundingObject USE temur_motor_shape
+                  physics Physics {
+                  }
+                }
+              }
+              DEF coax_extention_shape Shape {
+                appearance Plastic {
+                }
+                geometry Box {
+                  size 0.04 0.01 0.02
+                }
+              }
+            ]
+            boundingObject USE coax_extention_shape
+            physics Physics {
+            }
+          }
+          DEF coax_motor_shape Shape {
+            appearance DEF leg_appearance Appearance {
+              material Material {
+                diffuseColor 0.615686 0.505882 0.505882
+              }
+            }
+            geometry Cylinder {
+              height 0.025
+              radius 0.01
+            }
+          }
+        ]
+        boundingObject USE coax_motor_shape
+        physics Physics {
+        }
+      }
+    }
+    DEF body_shape Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.533333 0.101961 0.0862745
+          emissiveColor 0.231373 0.231373 0.231373
+        }
+      }
+      geometry Box {
+        size 0.08 0.16 0.04
+      }
+    }
+  ]
+  boundingObject USE body_shape
+  physics Physics {
+  }
+  controller "hexapod_controller"
+}
