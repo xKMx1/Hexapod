@@ -10,8 +10,8 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/project
 WorldInfo {
 }
 Viewpoint {
-  orientation 0.4809562853639283 -0.4922394111115223 -0.7255214770890751 4.419008589015544
-  position -0.024126791891518843 -0.3293135914289096 0.706906912757561
+  orientation 0.33429409584180036 -0.35756115082699513 -0.8720077298422233 4.417578248390406
+  position 0.17174286104000971 -0.6554590518880825 0.6881092147777882
 }
 TexturedBackground {
 }
@@ -21,8 +21,8 @@ RectangleArena {
   floorSize 10 10
 }
 Robot {
-  translation -2.3153084548360565e-05 -8.460879043546723e-06 0.019783806762290586
-  rotation 0.17855166290337668 -0.9837453666113637 -0.019088146717602957 0.0007744642965828971
+  translation -6.388661829585794e-06 -5.68419633483949e-06 0.09823699321785317
+  rotation -0.0001485194072941455 -5.590902374974747e-07 -0.9999999889708366 1.3998423665147261e-05
   children [
     Gyro {
     }
@@ -32,7 +32,7 @@ Robot {
     }
     DEF RB HingeJoint {
       jointParameters HingeJointParameters {
-        position 2.5319709807680525e-08
+        position -3.836490303553736e-07
         axis 0 0 1
         anchor 0.04 -0.06 0
       }
@@ -45,15 +45,15 @@ Robot {
         }
       ]
       endPoint Solid {
-        translation 0.0399999999999994 -0.06000000202557678 0
-        rotation 0 0 1 3.14159
+        translation 0.03999999999999857 -0.06000000202557678 0
+        rotation 0 0 -1 3.1415930625585333
         children [
           Solid {
             translation -0.02 0 0
             children [
               HingeJoint {
                 jointParameters HingeJointParameters {
-                  position 1.580790420872768e-08
+                  position -0.29431526268116026
                   axis 0 1 0
                   anchor -0.02 0 0
                 }
@@ -66,8 +66,8 @@ Robot {
                   }
                 ]
                 endPoint Solid {
-                  translation -0.02 -6.74617e-14 2.51031e-13
-                  rotation 1 7.903923110832198e-09 -7.90395212398996e-09 1.5707999999999998
+                  translation -0.02000000000007282 -6.74617e-14 2.4023691763570333e-13
+                  rotation 0.9787268050371437 -0.14507527976455822 0.14507585706457204 1.5923013788601266
                   children [
                     Solid {
                       translation -0.04 0 0
@@ -75,6 +75,7 @@ Robot {
                       children [
                         HingeJoint {
                           jointParameters HingeJointParameters {
+                            position 1.3639681352156385
                             axis 0 1 0
                             anchor -0.04 0 0
                           }
@@ -88,7 +89,7 @@ Robot {
                           ]
                           endPoint Solid {
                             translation -0.04 0 0
-                            rotation 1 0 0 1.5708
+                            rotation 0.6567424675110581 0.5332387215773468 -0.5332408435013615 1.9793953076399156
                             children [
                               Solid {
                                 translation -0.04 0 0
@@ -117,6 +118,8 @@ Robot {
                             boundingObject USE tibia_motor_shape
                             physics Physics {
                             }
+                            linearVelocity -5.724394800164394e-06 -4.271885644296892e-09 -9.726008645372729e-08
+                            angularVelocity 3.127703363968104e-09 -9.517871965645242e-07 -1.3491297684742191e-06
                           }
                         }
                         DEF temur_extention_shape Shape {
@@ -143,6 +146,8 @@ Robot {
                   boundingObject USE temur_motor_shape
                   physics Physics {
                   }
+                  linearVelocity -3.3339691650500245e-06 5.1922174575921434e-08 1.0255248403960439e-07
+                  angularVelocity 2.275066420335693e-09 6.483678257347856e-06 -1.3494596226516229e-06
                 }
               }
               DEF coax_extention_shape Shape {
@@ -173,11 +178,13 @@ Robot {
         boundingObject USE coax_motor_shape
         physics Physics {
         }
+        linearVelocity -1.3761315572443487e-06 1.1429846395289803e-07 2.041439008040709e-07
+        angularVelocity 1.0865460920573904e-09 1.521996377413869e-07 -1.3505998290692288e-06
       }
     }
     DEF RM HingeJoint {
       jointParameters HingeJointParameters {
-        position 2.5319709807680525e-08
+        position -3.836685230388342e-07
         axis 0 0 1
         anchor 0.04 0 0
       }
@@ -190,15 +197,15 @@ Robot {
         }
       ]
       endPoint Solid {
-        translation 0.04000000151918168 -2.025541869347727e-09 0
-        rotation 0 0 1 3.14159
+        translation 0.04000000151918085 -2.0255424906749874e-09 0
+        rotation 0 0 1 3.141589591011767
         children [
           Solid {
             translation -0.02 0 0
             children [
               HingeJoint {
                 jointParameters HingeJointParameters {
-                  position 1.580790420872768e-08
+                  position -0.2943152625900535
                   axis 0 1 0
                   anchor -0.02 0 0
                 }
@@ -211,8 +218,8 @@ Robot {
                   }
                 ]
                 endPoint Solid {
-                  translation -0.02 -6.74617e-14 2.51031e-13
-                  rotation 1 7.903923110832198e-09 -7.90395212398996e-09 1.5707999999999998
+                  translation -0.02000000000007282 -6.746169999999998e-14 2.402369176423377e-13
+                  rotation 0.9787267987446863 -0.1450753231938862 0.14507585608628243 1.5923010792582195
                   children [
                     Solid {
                       translation -0.04 0 0
@@ -220,6 +227,7 @@ Robot {
                       children [
                         HingeJoint {
                           jointParameters HingeJointParameters {
+                            position 1.3639681351461106
                             axis 0 1 0
                             anchor -0.04 0 0
                           }
@@ -233,7 +241,7 @@ Robot {
                           ]
                           endPoint Solid {
                             translation -0.04 0 0
-                            rotation 1 0 0 1.5708
+                            rotation 0.6567424103762425 0.5332388383737503 -0.5332407970729701 1.979395106573701
                             children [
                               Solid {
                                 translation -0.04 0 0
@@ -262,6 +270,8 @@ Robot {
                             boundingObject USE tibia_motor_shape
                             physics Physics {
                             }
+                            linearVelocity -5.747789690557129e-06 -4.386312796379094e-09 -9.63665980316013e-08
+                            angularVelocity 3.1009558197688473e-09 -9.659516080785567e-07 -1.3484810376212172e-06
                           }
                         }
                         DEF temur_extention_shape Shape {
@@ -288,6 +298,8 @@ Robot {
                   boundingObject USE temur_motor_shape
                   physics Physics {
                   }
+                  linearVelocity -3.4082937483338185e-06 5.183849017018505e-08 1.0296403808563375e-07
+                  angularVelocity 2.2785468577125878e-09 6.473501909882688e-06 -1.3488087820646851e-06
                 }
               }
               DEF coax_extention_shape Shape {
@@ -318,11 +330,13 @@ Robot {
         boundingObject USE coax_motor_shape
         physics Physics {
         }
+        linearVelocity -1.500964690246659e-06 1.1424287770177151e-07 2.0417565018375418e-07
+        angularVelocity 1.080385551676407e-09 1.4724103952358754e-07 -1.3499434026328603e-06
       }
     }
     DEF RF HingeJoint {
       jointParameters HingeJointParameters {
-        position 2.5319709807680525e-08
+        position -3.837049483747184e-07
         axis 0 0 1
         anchor 0.04 0.06 0
       }
@@ -335,15 +349,15 @@ Robot {
         }
       ]
       endPoint Solid {
-        translation 0.04000000303836459 0.05999999797442264 0
-        rotation 0 0 1 3.14159
+        translation 0.04000000303836376 0.0599999979744214 0
+        rotation 0 0 1 3.1415895909753417
         children [
           Solid {
             translation -0.02 0 0
             children [
               HingeJoint {
                 jointParameters HingeJointParameters {
-                  position 1.580790420872768e-08
+                  position -0.29431526249896317
                   axis 0 1 0
                   anchor -0.02 0 0
                 }
@@ -356,8 +370,8 @@ Robot {
                   }
                 ]
                 endPoint Solid {
-                  translation -0.02 -6.74617e-14 2.510316730636445e-13
-                  rotation 1 7.903923110832198e-09 -7.90395210436384e-09 1.5707999999999998
+                  translation -0.02000000000007282 -6.74617e-14 2.402375617715508e-13
+                  rotation 0.9787267987576231 -0.1450753231502483 0.1450758560426444 1.5923010792450047
                   children [
                     Solid {
                       translation -0.04 0 0
@@ -365,6 +379,7 @@ Robot {
                       children [
                         HingeJoint {
                           jointParameters HingeJointParameters {
+                            position 1.3639681350765567
                             axis 0 1 0
                             anchor -0.04 0 0
                           }
@@ -378,7 +393,7 @@ Robot {
                           ]
                           endPoint Solid {
                             translation -0.04 0 0
-                            rotation 1 3.925223937639758e-17 0 1.5708
+                            rotation 0.6567424104027854 0.5332388383574053 -0.5332407970566249 1.979395106536612
                             children [
                               Solid {
                                 translation -0.04 0 0
@@ -407,6 +422,8 @@ Robot {
                             boundingObject USE tibia_motor_shape
                             physics Physics {
                             }
+                            linearVelocity -5.771184487848359e-06 -4.364345030905883e-09 -9.547311858752115e-08
+                            angularVelocity 3.0957639710737373e-09 -9.80115815001059e-07 -1.34780724519647e-06
                           }
                         }
                         DEF temur_extention_shape Shape {
@@ -433,6 +450,8 @@ Robot {
                   boundingObject USE temur_motor_shape
                   physics Physics {
                   }
+                  linearVelocity -3.4826182961474847e-06 5.184614272669642e-08 1.0337558072173348e-07
+                  angularVelocity 2.2751031139073912e-09 6.463325696029176e-06 -1.3481351974569693e-06
                 }
               }
               DEF coax_extention_shape Shape {
@@ -463,11 +482,13 @@ Robot {
         boundingObject USE coax_motor_shape
         physics Physics {
         }
+        linearVelocity -1.6257978832388294e-06 1.1423299871251041e-07 2.0420739721834647e-07
+        angularVelocity 1.0782550067001595e-09 1.4228444385850969e-07 -1.349268327566392e-06
       }
     }
     DEF LF HingeJoint {
       jointParameters HingeJointParameters {
-        position 2.5319709807680525e-08
+        position -3.8364134085155023e-07
         axis 0 0 1
         anchor -0.04 0.06 0
       }
@@ -480,15 +501,15 @@ Robot {
         }
       ]
       endPoint Solid {
-        translation -0.03999999696163482 0.05999999999999935 0
-        rotation 0 0 0.9999999999999999 2.9802322387695313e-08
+        translation -0.03999999696163482 0.05999999999999811 0
+        rotation 0 0 -1 3.839760639287575e-07
         children [
           Solid {
             translation -0.02 0 0
             children [
               HingeJoint {
                 jointParameters HingeJointParameters {
-                  position 1.580790420872768e-08
+                  position -0.2943152626807538
                   axis 0 1 0
                   anchor -0.02 0 0
                 }
@@ -501,8 +522,8 @@ Robot {
                   }
                 ]
                 endPoint Solid {
-                  translation -0.02 -6.74617e-14 2.51031e-13
-                  rotation 1 7.903923110832198e-09 -7.90395212398996e-09 1.5707999999999998
+                  translation -0.02000000000007282 -6.746169999999998e-14 2.402369176357329e-13
+                  rotation 0.978726798731805 -0.1450753232373373 0.1450758561297337 1.592301079271378
                   children [
                     Solid {
                       translation -0.04 0 0
@@ -510,6 +531,7 @@ Robot {
                       children [
                         HingeJoint {
                           jointParameters HingeJointParameters {
+                            position 1.3639681352154638
                             axis 0 1 0
                             anchor -0.04 0 0
                           }
@@ -523,7 +545,7 @@ Robot {
                           ]
                           endPoint Solid {
                             translation -0.04 0 0
-                            rotation 1 0 0 1.5708
+                            rotation 0.6567424103497762 0.5332388383900484 -0.5332407970892682 1.9793951066106827
                             children [
                               Solid {
                                 translation -0.04 0 0
@@ -552,6 +574,8 @@ Robot {
                             boundingObject USE tibia_motor_shape
                             physics Physics {
                             }
+                            linearVelocity 5.7244081661535365e-06 4.3634519667253555e-09 -9.725193615499325e-08
+                            angularVelocity -3.122673756584305e-09 9.518462772487923e-07 -1.3491524242570742e-06
                           }
                         }
                         DEF temur_extention_shape Shape {
@@ -578,6 +602,8 @@ Robot {
                   boundingObject USE temur_motor_shape
                   physics Physics {
                   }
+                  linearVelocity 3.333981838168022e-06 -5.186171618102425e-08 1.0255781851768565e-07
+                  angularVelocity -2.277069342066712e-09 -6.4836192976679355e-06 -1.3494798934648773e-06
                 }
               }
               DEF coax_extention_shape Shape {
@@ -608,11 +634,13 @@ Robot {
         boundingObject USE coax_motor_shape
         physics Physics {
         }
+        linearVelocity 1.3761414988351353e-06 -1.1426900334335808e-07 2.0414617441949185e-07
+        angularVelocity -1.0915986818932836e-09 -1.5214302504953687e-07 -1.3506174487395733e-06
       }
     }
     DEF LM HingeJoint {
       jointParameters HingeJointParameters {
-        position 2.5319709807680525e-08
+        position -3.8367677950538165e-07
         axis 0 0 1
         anchor -0.04 0 0
       }
@@ -625,15 +653,15 @@ Robot {
         }
       ]
       endPoint Solid {
-        translation -0.039999998480817416 -2.9460164518320027e-16 0
-        rotation 0 0 0.9999999999999999 2.9802322387695313e-08
+        translation -0.039999998480817416 -9.159419891905156e-16 0
+        rotation 0 0 -1 3.839760639287575e-07
         children [
           Solid {
             translation -0.02 0 0
             children [
               HingeJoint {
                 jointParameters HingeJointParameters {
-                  position 1.580790420872768e-08
+                  position -0.29431526259019397
                   axis 0 1 0
                   anchor -0.02 0 0
                 }
@@ -646,8 +674,8 @@ Robot {
                   }
                 ]
                 endPoint Solid {
-                  translation -0.02 -6.74617e-14 2.51031e-13
-                  rotation 1 7.903923110832198e-09 -7.90395212398996e-09 1.5707999999999998
+                  translation -0.02000000000007282 -6.746170000000001e-14 2.4023691764232754e-13
+                  rotation 0.9787267987446664 -0.14507532319395353 0.14507585608634974 1.5923010792582397
                   children [
                     Solid {
                       translation -0.04 0 0
@@ -655,6 +683,7 @@ Robot {
                       children [
                         HingeJoint {
                           jointParameters HingeJointParameters {
+                            position 1.3639681351460922
                             axis 0 1 0
                             anchor -0.04 0 0
                           }
@@ -668,7 +697,7 @@ Robot {
                           ]
                           endPoint Solid {
                             translation -0.04 0 0
-                            rotation 1 0 0 1.5708
+                            rotation 0.6567424103762496 0.533238838373746 -0.5332407970729657 1.979395106573691
                             children [
                               Solid {
                                 translation -0.04 0 0
@@ -697,6 +726,8 @@ Robot {
                             boundingObject USE tibia_motor_shape
                             physics Physics {
                             }
+                            linearVelocity 5.747792661746355e-06 4.341318344037656e-09 -9.63579872320696e-08
+                            angularVelocity -3.117319447551456e-09 9.660098227392522e-07 -1.3484674828252393e-06
                           }
                         }
                         DEF temur_extention_shape Shape {
@@ -723,6 +754,8 @@ Robot {
                   boundingObject USE temur_motor_shape
                   physics Physics {
                   }
+                  linearVelocity 3.4082995039759955e-06 -5.186935013138263e-08 1.0296986542436244e-07
+                  angularVelocity -2.2732280898705032e-09 -6.473443232424833e-06 -1.3487949712430438e-06
                 }
               }
               DEF coax_extention_shape Shape {
@@ -753,11 +786,13 @@ Robot {
         boundingObject USE coax_motor_shape
         physics Physics {
         }
+        linearVelocity 1.5009712528246533e-06 -1.1425886630969156e-07 2.0417842476757863e-07
+        angularVelocity -1.0902480690846396e-09 -1.471843185670594e-07 -1.3499310479109764e-06
       }
     }
     DEF LB HingeJoint {
       jointParameters HingeJointParameters {
-        position 2.5319709807680525e-08
+        position -3.837123589627556e-07
         axis 0 0 1
         anchor -0.04 -0.06 0
       }
@@ -771,14 +806,14 @@ Robot {
       ]
       endPoint Solid {
         translation -0.04 -0.06 0
-        rotation 0 0 0.9999999999999999 2.9802322387695313e-08
+        rotation 0 0 -1 3.839760639287575e-07
         children [
           Solid {
             translation -0.02 0 0
             children [
               HingeJoint {
                 jointParameters HingeJointParameters {
-                  position 1.580790420872768e-08
+                  position -0.2943152624995042
                   axis 0 1 0
                   anchor -0.02 0 0
                 }
@@ -791,8 +826,8 @@ Robot {
                   }
                 ]
                 endPoint Solid {
-                  translation -0.020000000000000004 0 -4.607858684616543e-19
-                  rotation 1 7.903923110832198e-09 -7.90395212398996e-09 1.5707999999999998
+                  translation -0.020000000000000004 0 -1.4474058022228615e-18
+                  rotation 0.9787267987575462 -0.14507532315050747 0.14507585604290354 1.5923010792450831
                   children [
                     Solid {
                       translation -0.04 0 0
@@ -800,6 +835,7 @@ Robot {
                       children [
                         HingeJoint {
                           jointParameters HingeJointParameters {
+                            position 1.3639681350767279
                             axis 0 1 0
                             anchor -0.04 0 0
                           }
@@ -813,7 +849,7 @@ Robot {
                           ]
                           endPoint Solid {
                             translation -0.04 0 0
-                            rotation 1 0 0 1.5708
+                            rotation 0.6567424104027202 0.5332388383574453 -0.5332407970566652 1.9793951065367035
                             children [
                               Solid {
                                 translation -0.04 0 0
@@ -842,6 +878,8 @@ Robot {
                             boundingObject USE tibia_motor_shape
                             physics Physics {
                             }
+                            linearVelocity 5.771177259536646e-06 4.319198349179723e-09 -9.546390515578601e-08
+                            angularVelocity -3.1120261854320955e-09 9.801755934923233e-07 -1.3477833787129956e-06
                           }
                         }
                         DEF temur_extention_shape Shape {
@@ -868,6 +906,8 @@ Robot {
                   boundingObject USE temur_motor_shape
                   physics Physics {
                   }
+                  linearVelocity 3.4826172950265596e-06 -5.1876984354036694e-08 1.0338195725067086e-07
+                  angularVelocity -2.26994672930881e-09 -6.4632657136868514e-06 -1.3481110389218013e-06
                 }
               }
               DEF coax_extention_shape Shape {
@@ -897,6 +937,8 @@ Robot {
         boundingObject USE coax_motor_shape
         physics Physics {
         }
+        linearVelocity 1.6258010727422184e-06 -1.1424874755204577e-07 2.0421065041516296e-07
+        angularVelocity -1.0875601751593784e-09 -1.422245094396695e-07 -1.3492455462148143e-06
       }
     }
     DEF body_shape Shape {
@@ -914,5 +956,7 @@ Robot {
   boundingObject USE body_shape
   physics Physics {
   }
-  controller "<extern>"
+  controller "hexapod_controller"
+  linearVelocity 3.362467634303469e-12 -3.479419272004797e-13 2.0454238514368728e-07
+  angularVelocity -4.052448048968019e-12 2.8942572957167733e-11 2.921125172898603e-06
 }
