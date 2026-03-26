@@ -6,5 +6,5 @@ maximizedDockId: -1
 centralWidgetVisible: 1
 renderingMode: PLAIN
 orthographicViewHeight: 1
-textFiles: 0 "../../Freestyle/controllers/hexapod_controller/hexapod_controller.c"
+textFiles: 0 "controllers/hexapod_controller/hexapod_controller.c"
 consoles: Console:All:All
