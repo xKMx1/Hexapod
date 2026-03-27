@@ -23,5 +23,7 @@ def run_random():
     env.close()
     print("[hexapod_rl] Random actions test finished")
 
+
+
 if __name__ == "__main__":
     run_random()

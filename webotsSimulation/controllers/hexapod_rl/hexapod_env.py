@@ -156,6 +156,11 @@ class HexapodEnv(gym.Env):
                 if joint_type == "coax":
                     target *= LEG_SIDES[i]
 
+                if np.isnan(target):
+                    print("WARNING: Target is NaN!")
+                    target = 0.0
+
+                # print(target, "\n")
                 self.motors[motor_i].setPosition(target)
 
     def _compute_reward(self, obs, action):
@@ -187,17 +192,21 @@ class HexapodEnv(gym.Env):
         trans_field = robot_node.getField("translation")
         rot_field = robot_node.getField("rotation")
 
-        self.robot.simulationResetPhysics()
         robot_node.resetPhysics()
 
         trans_field.setSFVec3f([0, 0, 0.15])
         rot_field.setSFRotation([0, 0, 1, 0])
 
+        robot_node.resetPhysics()
+
+        self.robot.simulationResetPhysics()
+
         base_action = np.zeros(18, dtype=np.float32)
         self._apply_action(base_action)
 
-        for i in range(10):             # few steps to stabilize simulation
-            self.robot.step(TIME_STEP)
+        for i in range(15):             # few steps to stabilize simulation
+            if self.robot.step(self.timestep) == -1:
+                break
 
         self._step_count = 0
         self._prev_action = np.zeros(18, dtype=np.float32)
