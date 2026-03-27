@@ -116,6 +116,7 @@ def evaluate(model_path, n_episodees=10):
 
     model = PPO.load(model_path, env=env)
 
+
     rewards = []
     for ep in range(n_episodees):
         observation = env.reset()
