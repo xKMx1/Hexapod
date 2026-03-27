@@ -85,7 +85,7 @@ class HexapodEnv(gym.Env):
 
         self.action_space = spaces.Box(
             low=-1.0, high=1.0,
-            shape=(18,1), dtype=np.float32
+            shape=(18,), dtype=np.float32
         )
 
         obs_dim = 48
@@ -120,21 +120,32 @@ class HexapodEnv(gym.Env):
         vel = (pos - self._prev_position) / (TIME_STEP * 1e-3)
         self._prev_position = pos.copy()
 
+        joint_angles = np.array(
+            [s.getValue() for s in self.sensors], dtype=np.float32
+        )
+        joints_normalized = self._normalize_joints(joint_angles)
+
+        observation = np.concatenate([
+            pos, rot, vel, gyro, joints_normalized, self._prev_action
+        ])
+        return observation.astype(np.float32)
+
 
     def _normalize_joints(self, angles):
         normalized = np.zeros(18, dtype=np.float32)
 
         for i in range(6):
-            for joint_type in self.joint_types:
+            for joint_index, joint_type in enumerate(self.joint_types):
+                motor_i = i * 3 + joint_index
                 low, high = JOINT_LIMITS[joint_type]
 
-                normalized[i] = 2 * (angles[i] - low) / (high - low) - 1.0
+                normalized[motor_i] = 2 * (angles[motor_i] - low) / (high - low) - 1.0
 
         return np.clip(normalized, -1.0, 1.0)   # clipped to prevent bugs with wrong input value or floating point calculations
 
     def _apply_action(self, action):
         for i in range(6):
-            for joint_index, joint_type in self.joint_types:
+            for joint_index, joint_type in enumerate(self.joint_types):
                 motor_i = i * 3 + joint_index
                 delta = action[motor_i] * self._action_scales[motor_i]
                 target = BASE_POSE[joint_index] + delta
@@ -170,18 +181,23 @@ class HexapodEnv(gym.Env):
         return flalen
 
     def reset(self, seed=None, option=None):
-        super().reste(seed=seed)
+        super().reset(seed=seed)
+
+        robot_node = self.robot.getSelf()
+        trans_field = robot_node.getField("translation")
+        rot_field = robot_node.getField("rotation")
 
         self.robot.simulationResetPhysics()
-        self.robot_node.resetPhysics()
+        robot_node.resetPhysics()
 
-        # for i in range(10):             # few steps to stabilize simulation
-        #     self.robot.step(TIME_STEP)
+        trans_field.setSFVec3f([0, 0, 0.15])
+        rot_field.setSFRotation([0, 0, 1, 0])
 
         base_action = np.zeros(18, dtype=np.float32)
         self._apply_action(base_action)
-        for i in range(50):
-            self.robot.step(50)         # time for stand up, TODO check if its needed
+
+        for i in range(10):             # few steps to stabilize simulation
+            self.robot.step(TIME_STEP)
 
         self._step_count = 0
         self._prev_action = np.zeros(18, dtype=np.float32)
@@ -201,8 +217,8 @@ class HexapodEnv(gym.Env):
         self._step_count += 1
 
         observation = self._get_observation()
-        reward = self._compute_reward()
-        terminated = self._is_terminated()
+        reward = self._compute_reward(observation, action)
+        terminated = self._is_terminated(observation)
         truncated = self._step_count >= MAX_EPISODE_STEPS
 
         self._prev_action = action.copy()
@@ -219,9 +235,9 @@ class HexapodEnv(gym.Env):
     def close(self):
         pass
 
-try:
+# try:
 
-    env = HexapodEnv()
+#     env = HexapodEnv()
 
     # robot = Supervisor()
     # timestep = int(TIME_STEP)
@@ -253,5 +269,5 @@ try:
 
     #     print(f"GPS: {gps_fmt}  IMU: {imu_fmt}  Gyro: {gyro_fmt}")
 
-except Exception as e: 
-    print(f"Błąd {e}")
+# except Exception as e: 
+#     print(f"Błąd {e}")
