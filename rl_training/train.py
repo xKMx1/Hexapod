@@ -21,24 +21,24 @@ from stable_baselines3.common.callbacks import (
 from webotsSimulation.controllers.hexapod_rl.hexapod_env import HexapodEnv
 
 PPO_CONFIG = dict(
-    n_steps = 128,       # 2048      # steps before actualization
+    n_steps = 512,       # 2048      # steps before actualization
     batch_size = 64,            # size of mini batch before actialization
     n_epochs = 10,              
     gamma = 0.99,
-    gae_lambda = 0.5,
+    gae_lambda = 0.95,
     clip_range = 0.2,
-    ent_coef = 0.01,
+    ent_coef = 0.1,
     learning_rate = 3e-4,
     policy_kwargs = dict(
         net_arch = dict(
-            pi = [256, 256],
-            vf = [256, 256],
+            pi = [512, 512],
+            vf = [512, 512],
         )
     ),
 )
 
-TOTAL_TIMESTEPS = 20000
-CHECKPOINT_FREQ = 5000
+TOTAL_TIMESTEPS = 2000000
+CHECKPOINT_FREQ = 50000
 # EVAL_FREQ = 25000
 # EVAL_EPISODES = 5
 

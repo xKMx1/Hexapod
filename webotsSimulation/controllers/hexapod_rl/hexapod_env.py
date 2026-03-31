@@ -8,7 +8,7 @@ TIME_STEP = 32                 # ms but it doesnt work precisly
 MAX_EPISODE_STEPS = 1000
 
 JOINT_LIMITS = {
-    "coax":  (-0.1, 0.1),      # from webots
+    "coax":  (-0.4, 0.4),      # from webots
     "femur": (-1.0,  1.0),              # temp values, to be checked
     "tibia": (-1.0,  2),
 }
@@ -50,6 +50,8 @@ class HexapodEnv(gym.Env):
 
         self.robot = Supervisor()
         self.timestep = TIME_STEP
+
+        self.robot.step(0)
 
         # sensors
 
@@ -243,40 +245,3 @@ class HexapodEnv(gym.Env):
 
     def close(self):
         pass
-
-# try:
-
-#     env = HexapodEnv()
-
-    # robot = Supervisor()
-    # timestep = int(TIME_STEP)
-    # print(f"dziala {int(robot.getBasicTimeStep())}")
-
-    # if robot.step(timestep) != -1:
-    #     print("symulaja chodzi")
-
-    # gps = robot.getDevice("gps")
-    # gps.enable(timestep)
-
-    # imu = robot.getDevice("inertial unit")
-    # imu.enable(timestep)
-
-    # gyro = robot.getDevice("gyro")
-    # gyro.enable(timestep)
-
-    # motor = robot.getDevice("femur_lf_motor")
-    # motor.setPosition(0.5)
-
-    # while robot.step(timestep) != -1:
-    #     values_gps = gps.getValues()
-    #     values_gyro = gyro.getValues()
-    #     values_imu = imu.getRollPitchYaw()
-
-    #     gps_fmt  = [f"{v:8.3f}" for v in values_gps]
-    #     imu_fmt  = [f"{v:8.3f}" for v in values_imu]
-    #     gyro_fmt = [f"{v:8.3f}" for v in values_gyro]
-
-    #     print(f"GPS: {gps_fmt}  IMU: {imu_fmt}  Gyro: {gyro_fmt}")
-
-# except Exception as e: 
-#     print(f"Błąd {e}")
