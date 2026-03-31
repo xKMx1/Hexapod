@@ -5,28 +5,30 @@
 #include <stdio.h>
 
 #define TIME_STEP 16
-#define L1 0.07
-#define L2 0.08
+#define L1 0.036
+#define L2 0.0813
 
 #define STAND_Z_START 0.0
 #define STAND_Z_END -0.10
 #define STAND_TIME 2.0
+
 #define STAND_X 0.06
 #define STAND_Y 0.00
 
-#define STEP_HEIGHT 0.05
-#define STEP_LENGTH 0.03
+#define STEP_HEIGHT 0.03
+#define STEP_LENGTH 0.01
 #define COAX_SWING 0.16
-#define CYCLE_TIME 0.8
+#define CYCLE_TIME 1.0
 
 typedef struct {
     WbDeviceTag coax, femur, tibia;
     int side; // -1=lewa, 1=prawa
+    double mount_angle;
 } Leg;
 
 Leg legs[6];
 
-void init_leg(int index, const char* prefix, int side) {
+void init_leg(int index, const char* prefix, int side, float mount_angle) {
     char name[64];
     sprintf(name, "coax_%s_motor", prefix);
     legs[index].coax = wb_robot_get_device(name);
@@ -40,6 +42,7 @@ void init_leg(int index, const char* prefix, int side) {
     wb_motor_set_velocity(legs[index].tibia, 5.0);
     
     legs[index].side = side;
+    legs[index].mount_angle = mount_angle;
 }
 
 void ik_solve(double x, double y, double z, double *coax, double *femur, double *tibia) {
@@ -70,14 +73,33 @@ void move_leg(int leg_id, double x, double y, double z) {
     wb_motor_set_position(legs[leg_id].tibia, tibia);
 }
 
-void set_leg_angles(int leg_id, double coax_angle, double femur_angle, double tibia_angle) {
-    if(legs[leg_id].side == -1)
-        coax_angle = -coax_angle;
+void move_leg_robot_coords(int leg_id, double x_rob, double y_rob, double z_rob) {
+    double beta = legs[leg_id].mount_angle;
     
-    wb_motor_set_position(legs[leg_id].coax, coax_angle);
+    double x_loc = x_rob * cos(beta) + y_rob * sin(beta);
+    double y_loc = -x_rob * sin(beta) + y_rob * cos(beta);
+    
+    double coax, femur, tibia;
+    ik_solve(x_loc, y_loc, z_rob, &coax, &femur, &tibia);
+    
+    if(legs[leg_id].side == -1) coax = -coax;
+    tibia = -tibia;
+    
+    wb_motor_set_position(legs[leg_id].coax, coax);
+    wb_motor_set_position(legs[leg_id].femur, femur);
+    wb_motor_set_position(legs[leg_id].tibia, tibia);
+}
+
+void set_leg_angles(int leg_id, double coax_angle, double femur_angle, double tibia_angle) {
+    double final_coax = legs[leg_id].mount_angle + coax_angle;
+    if(legs[leg_id].side == -1)
+        final_coax = -final_coax;
+    
+    wb_motor_set_position(legs[leg_id].coax, final_coax);  // ← było coax_angle
     wb_motor_set_position(legs[leg_id].femur, femur_angle);
     wb_motor_set_position(legs[leg_id].tibia, tibia_angle);
 }
+
 
 void stand_up() {
     double start_time = wb_robot_get_time();
@@ -105,51 +127,32 @@ void walk(double time, double direction) {
     double freq = 2.0 * M_PI / CYCLE_TIME;
     double phase = fmod(time * freq, 2.0 * M_PI);
     
-    double base_coax, base_femur, base_tibia;
-    get_stand_angles(&base_coax, &base_femur, &base_tibia);
-    
     for(int i = 0; i < 6; i++) {
-        int is_group_a = i == 0 || i == 2 || i == 4;
+        int is_group_a = (i == 0 || i == 2 || i == 4);
         
-        double coax_offset = 0.0;
-        double femur_offset = 0.0;
-        double tibia_offset = 0.0;
+        double x_offset = STAND_X;
+        double y_offset = 0.0;
+        double z_offset = STAND_Z_END;
         
-        if(is_group_a) {
-            if(phase < M_PI) {
-                // noga w gorze
-                double swing_progress = phase / M_PI;
-                
-                coax_offset = COAX_SWING * sin(M_PI * swing_progress) * direction;
+        double current_phase = is_group_a ? phase : fmod(phase + M_PI, 2.0 * M_PI);
 
-                double lift = 4.0 * swing_progress * (1.0 - swing_progress);
-                femur_offset = 0.15 * lift;
-                tibia_offset = 0.1 * lift;
-            } 
-            else {
-                // noga na ziemi
-                double stance_progress = (phase - M_PI) / M_PI;
-                coax_offset = COAX_SWING * (1.0 - stance_progress) * direction * (-1.0);
-            }
+        if(current_phase < M_PI) {
+            double swing = current_phase / M_PI;
+            
+            y_offset = (-STEP_LENGTH / 2.0) - (swing * STEP_LENGTH);
+            y_offset *= direction;
+            
+            double lift = sin(current_phase);
+            z_offset += STEP_HEIGHT * lift;
         } 
         else {
-            if(phase >= M_PI) {
-                double swing_progress = (phase - M_PI) / M_PI;
-                coax_offset = COAX_SWING * sin(M_PI * swing_progress) * direction;
-                
-                double lift = 4.0 * swing_progress * (1.0 - swing_progress);
-                femur_offset = 0.15 * lift;
-                tibia_offset = 0.1 * lift;
-            } 
-            else {
-                double stance_progress = phase / M_PI;
-                coax_offset = COAX_SWING * (1.0 - stance_progress) * direction * (-1.0);
-            }
+            double stance = (current_phase - M_PI) / M_PI;
+            
+            y_offset = (STEP_LENGTH / 2.0) + (stance * STEP_LENGTH);
+            y_offset *= direction;
         }
         
-        set_leg_angles(i, base_coax + coax_offset, 
-                       base_femur + femur_offset,
-                       base_tibia + tibia_offset);
+        move_leg_robot_coords(i, x_offset, y_offset, z_offset);
     }
 }
 
@@ -218,6 +221,12 @@ void control_loop() {
         double forward = 0.0;
         int rotation_dir = 0;
         
+        
+        
+        // double test_angle = 0.4 * sin(current_time * 25.0);
+        // set_leg_angles(5, test_angle, 0, 0);
+        
+        
         if(key == 'W') {
             forward = -1.0;
         } 
@@ -250,12 +259,12 @@ void control_loop() {
 int main() {
     wb_robot_init();
     
-    init_leg(0, "lf", -1);
-    init_leg(1, "lm", -1);
-    init_leg(2, "lb", -1);
-    init_leg(3, "rf", 1);
-    init_leg(4, "rm", 1);
-    init_leg(5, "rb", 1);
+    init_leg(0, "lf", -1, 0.896);
+    init_leg(1, "lm", -1, 0.0);
+    init_leg(2, "lb", -1, -0.896);
+    init_leg(3, "rf", 1, 0.896);
+    init_leg(4, "rm", 1, 0.0);
+    init_leg(5, "rb", 1, -0.896);
     
     wb_keyboard_enable(TIME_STEP);
     
