@@ -6,6 +6,54 @@ from datetime import datetime
 import sys 
 from pathlib import Path
 
+from stable_baselines3.common.callbacks import BaseCallback
+
+class HexapodMetricsCallback(BaseCallback):
+    def __init__(self, verbose=0):
+        super().__init__(verbose)
+        self._vel_x = []
+        self._roll = []
+        self._pitch = []
+        self._heights = []
+        self._rewards = []
+
+    def _on_step(self) -> bool:
+        infos = self.locals.get("infos", [])
+        rewards = self.locals.get("rewards", [])
+
+        if rewards is not None:
+            self._rewards.extend(rewards.tolist())
+
+        for info in infos:
+            if "vel_x" in info:
+                self._vel_x.append(info["vel_x"])
+                self._roll.append(abs(info["roll"]))
+                self._pitch.append(abs(info["pitch"]))
+            if "height" in info:
+                self._heights.append(info["height"])
+
+        if self.num_timesteps % 512 == 0 and self._rewards:
+            self.logger.record("hexapod/reward_mean", np.mean(self._rewards))
+            self.logger.record("hexapod/reward_min",  np.min(self._rewards))
+            self.logger.record("hexapod/reward_max",  np.max(self._rewards))
+
+            if self._vel_x:
+                self.logger.record("hexapod/vel_y",   np.mean(self._vel_x))
+                self.logger.record("hexapod/roll",     np.mean(self._roll))
+                self.logger.record("hexapod/pitch",    np.mean(self._pitch))
+            if self._heights:
+                self.logger.record("hexapod/height",   np.mean(self._heights))
+
+            self.logger.dump(self.num_timesteps)
+
+            self._rewards.clear()
+            self._vel_x.clear()
+            self._roll.clear()
+            self._pitch.clear()
+            self._heights.clear()
+
+        return True
+
 root_dir = Path(__file__).resolve().parent.parent
 sys.path.append(str(root_dir))
 
@@ -20,6 +68,12 @@ from stable_baselines3.common.callbacks import (
 
 from webotsSimulation.controllers.hexapod_rl.hexapod_env import HexapodEnv
 
+def linear_schedule(initial_value):
+    def schedule(progress):          # progress: 1.0 → 0.0
+        return initial_value * progress
+    return schedule
+
+
 PPO_CONFIG = dict(
     n_steps = 512,       # 2048      # steps before actualization
     batch_size = 64,            # size of mini batch before actialization
@@ -27,12 +81,12 @@ PPO_CONFIG = dict(
     gamma = 0.99,
     gae_lambda = 0.95,
     clip_range = 0.2,
-    ent_coef = 0.1,
-    learning_rate = 3e-4,
+    ent_coef = 0.01,
+    learning_rate = linear_schedule(3e-4),
     policy_kwargs = dict(
         net_arch = dict(
-            pi = [512, 512],
-            vf = [512, 512],
+            pi = [128, 128],
+            vf = [128, 128],
         )
     ),
 )
@@ -71,7 +125,7 @@ def train(resume_path=None):
             train_env = VecNormalize.load(stats_path, base_env)
             print(f"[train INFO] Read statistic from: {stats_path}")
     else: 
-        model = PPO("MlpPolicy", train_env, **PPO_CONFIG)
+        model = PPO("MlpPolicy", train_env, tensorboard_log="logs/tensorboard", **PPO_CONFIG)
 
     run_name = datetime.now().strftime("%Y%m%d_%H%M%S")
 
@@ -83,7 +137,9 @@ def train(resume_path=None):
         verbose=1,
     )
 
-    callbacks = CallbackList([checkpoint_cb])
+    metrics_cb = HexapodMetricsCallback()
+
+    callbacks = CallbackList([checkpoint_cb, metrics_cb])
 
     print("\n")
     print(f"[train INFO] Starting training PPO")
@@ -96,6 +152,7 @@ def train(resume_path=None):
         callback=callbacks,
         reset_num_timesteps=resume_path is None,
         progress_bar=True,
+        tb_log_name=run_name,
     )
 
     final_path = f"models/saved/hexapod_final_{run_name}"
@@ -114,7 +171,7 @@ def evaluate(model_path, n_episodees=10):
         env.training = False
         env.norm_reward = False
 
-    model = PPO.load(model_path, env=env)
+    model = PPO.load(model_path, env=env, tensorboard_log="logs/tensorboard")
 
 
     rewards = []

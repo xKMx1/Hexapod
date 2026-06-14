@@ -19,7 +19,7 @@ LEG_SIDES = [-1, -1, -1, 1, 1, 1]           # left side = -1, right side = 1
 BASE_POSE = [0.0, -0.294316, 1.36397]
 
 FALL_THRESHOLD_RAD = 0.8
-MIN_HEIGHT = 0.04
+MIN_HEIGHT = 0.05
 
 class HexapodEnv(gym.Env):
     '''
@@ -166,15 +166,27 @@ class HexapodEnv(gym.Env):
                 self.motors[motor_i].setPosition(target)
 
     def _compute_reward(self, obs, action):
-        vel_x = obs[6]
-        roll, pitch = obs[3], obs[4]
+        vel_y  = obs[7]
+        roll   = obs[3]
+        pitch  = obs[4]
+        height = obs[2]
 
-        r_forward = vel_x * 5           # 5 and other multiplied values are weights
-        r_stable = -abs(roll) * 0.5 - abs(pitch) * 0.5
-        r_smooth = -np.sum(np.abs(action - self._prev_action)) * 0.05
-        r_energy = -np.sum(action ** 2) * 0.01
+        r_alive = 0.5
 
-        reward = r_forward + r_stable + r_smooth + r_energy
+        r_forward = np.clip(vel_y, -1.0, None) * 3.0
+
+        r_stable = -(abs(roll) + abs(pitch)) * 0.3
+
+        r_smooth = -np.sum(np.abs(action - self._prev_action)) * 0.005
+        r_energy = -np.sum(action ** 2) * 0.001
+
+        reward = r_alive + r_forward + r_stable + r_smooth + r_energy
+
+        if self._step_count % 300 == 0:
+            print(f"alive={r_alive:.2f} | fwd={r_forward:.3f} | "
+                f"stable={r_stable:.3f} | smooth={r_smooth:.3f} | "
+                f"energy={r_energy:.3f} | TOTAL={reward:.3f}")
+
         return reward
     
     def _is_terminated(self, obs):
@@ -235,7 +247,7 @@ class HexapodEnv(gym.Env):
         self._prev_action = action.copy()
 
         info = {
-            "vel_x":    float(observation[6]),
+            "vel_y":    float(observation[7]),
             "roll":     float(observation[3]),
             "pitch":    float(observation[4]),
             "step":     self._step_count,
