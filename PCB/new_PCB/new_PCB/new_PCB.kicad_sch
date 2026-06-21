@@ -1830,6 +1830,747 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Elements:MOLEX-Connector"
+			(body_styles demorgan)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 8.89 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "MOLEX-Connector"
+				(at 8.89 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Footprint" "CONN_22035035_MOL"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.molex.com/en-us/products/part-detail-pdf/22035035?display=pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "22035035"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "CONN_22035035_MOL"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MOLEX-Connector_1_1"
+				(polyline
+					(pts
+						(xy 5.08 2.54) (xy 5.08 -7.62)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -7.62) (xy 12.7 -7.62)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 0) (xy 5.08 0)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 0) (xy 8.89 0.8467)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 0) (xy 8.89 -0.8467)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -2.54) (xy 5.08 -2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -2.54) (xy 8.89 -1.6933)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -2.54) (xy 8.89 -3.3867)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -5.08) (xy 5.08 -5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -5.08) (xy 8.89 -4.2333)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -5.08) (xy 8.89 -5.9267)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.7 2.54) (xy 5.08 2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.7 -7.62) (xy 12.7 2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at 0 0 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -5.08 0)
+					(length 5.08)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "MOLEX-Connector_1_2"
+				(polyline
+					(pts
+						(xy 5.08 2.54) (xy 5.08 -7.62)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -7.62) (xy 12.7 -7.62)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 0) (xy 5.08 0)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 0) (xy 8.89 0.8467)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 0) (xy 8.89 -0.8467)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -2.54) (xy 5.08 -2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -2.54) (xy 8.89 -1.6933)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -2.54) (xy 8.89 -3.3867)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -5.08) (xy 5.08 -5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -5.08) (xy 8.89 -4.2333)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -5.08) (xy 8.89 -5.9267)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.7 2.54) (xy 5.08 2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.7 -7.62) (xy 12.7 2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at 0 0 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -5.08 0)
+					(length 5.08)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Elements:MP1584EN"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Elements:MP1584EN"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MP1584EN_1_1"
+				(rectangle
+					(start -7.62 11.43)
+					(end 7.62 -11.43)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -10.16 7.62 0)
+					(length 2.54)
+					(name "OUT+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 3.81 0)
+					(length 2.54)
+					(name "OUT+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -3.81 0)
+					(length 2.54)
+					(name "OUT-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -7.62 0)
+					(length 2.54)
+					(name "OUT-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 -7.62 180)
+					(length 2.54)
+					(name "IN-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 -3.81 180)
+					(length 2.54)
+					(name "IN-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 3.81 180)
+					(length 2.54)
+					(name "IN+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 7.62 180)
+					(length 2.54)
+					(name "IN+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Elements:XT60PW-F"
 			(pin_names
 				(offset 1.016)
@@ -2565,8 +3306,38 @@
 		(uuid "9de3bca7-fcb0-49ec-91d7-946a80f19c2e")
 	)
 	(no_connect
-		(at 189.23 39.37)
+		(at 256.54 58.42)
+		(uuid "07d8aee9-1f92-4bc9-acc7-6a148b52c2c3")
+	)
+	(no_connect
+		(at 212.09 26.67)
+		(uuid "1ca15fe8-ad1a-46f2-850d-7bbf77784161")
+	)
+	(no_connect
+		(at 232.41 26.67)
+		(uuid "25843dbc-d06a-4142-8cc6-e18a9e4d522b")
+	)
+	(no_connect
+		(at 212.09 34.29)
+		(uuid "310c2d7c-fdef-4c41-a1c6-d5ed64a91ae0")
+	)
+	(no_connect
+		(at 232.41 34.29)
+		(uuid "5b494009-bc83-4f0f-b379-0f9fa1d41e00")
+	)
+	(no_connect
+		(at 256.54 35.56)
 		(uuid "f3729ee2-14bf-48e7-b4de-bf2338def28d")
+	)
+	(wire
+		(pts
+			(xy 186.69 158.75) (xy 191.77 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00b38269-5640-4d3e-b0e9-14e46664ffde")
 	)
 	(wire
 		(pts
@@ -2600,6 +3371,26 @@
 	)
 	(wire
 		(pts
+			(xy 234.95 21.59) (xy 234.95 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08b8947d-7805-4e55-85ac-7fdf19e76bbb")
+	)
+	(wire
+		(pts
+			(xy 186.69 152.4) (xy 186.69 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "096fc22e-bef1-4770-b4b6-1d68876a0c1a")
+	)
+	(wire
+		(pts
 			(xy 25.4 50.8) (xy 31.75 50.8)
 		)
 		(stroke
@@ -2607,6 +3398,36 @@
 			(type default)
 		)
 		(uuid "0c30a83a-cad0-45e9-881d-b392ef3585e1")
+	)
+	(wire
+		(pts
+			(xy 182.88 149.86) (xy 182.88 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d87c8d1-32d4-4c37-a0b5-e22f4a8904a2")
+	)
+	(wire
+		(pts
+			(xy 191.77 113.03) (xy 186.69 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0dbfbb6b-fcc3-404c-8e41-c099f6948357")
+	)
+	(wire
+		(pts
+			(xy 182.88 129.54) (xy 182.88 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e483ec8-4f04-4dc4-9379-ec08be983fb0")
 	)
 	(wire
 		(pts
@@ -2620,6 +3441,26 @@
 	)
 	(wire
 		(pts
+			(xy 182.88 109.22) (xy 182.88 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1368037a-4bf7-49b2-9eac-9b3b69be9f35")
+	)
+	(wire
+		(pts
+			(xy 240.03 111.76) (xy 240.03 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "189b1a13-5651-4671-95c2-c542bec80b34")
+	)
+	(wire
+		(pts
 			(xy 115.57 53.34) (xy 115.57 55.88)
 		)
 		(stroke
@@ -2630,6 +3471,16 @@
 	)
 	(wire
 		(pts
+			(xy 245.11 156.21) (xy 236.22 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e2e7d49-2c6d-4f91-8d2d-dd0feac4b32b")
+	)
+	(wire
+		(pts
 			(xy 54.61 123.19) (xy 54.61 128.27)
 		)
 		(stroke
@@ -2637,6 +3488,16 @@
 			(type default)
 		)
 		(uuid "1f55d84b-effe-4337-a7a6-a4dc29166e57")
+	)
+	(wire
+		(pts
+			(xy 186.69 132.08) (xy 186.69 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f737c57-ac22-4237-8e3f-256d31519e10")
 	)
 	(wire
 		(pts
@@ -2670,6 +3531,26 @@
 	)
 	(wire
 		(pts
+			(xy 240.03 152.4) (xy 240.03 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22108cb5-0095-46be-b6ec-c6db847f3f9e")
+	)
+	(wire
+		(pts
+			(xy 209.55 38.1) (xy 209.55 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2392af9a-6db0-4c86-818c-b2ddabfc3a9b")
+	)
+	(wire
+		(pts
 			(xy 50.8 128.27) (xy 54.61 128.27)
 		)
 		(stroke
@@ -2700,7 +3581,27 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 31.75) (xy 189.23 31.75)
+			(xy 186.69 111.76) (xy 186.69 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a07dacf-5902-4e02-bb6b-83485f4d0364")
+	)
+	(wire
+		(pts
+			(xy 251.46 49.53) (xy 251.46 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f4e31bd-b038-4d43-8f6a-15b7b4cb1e0c")
+	)
+	(wire
+		(pts
+			(xy 251.46 27.94) (xy 256.54 27.94)
 		)
 		(stroke
 			(width 0)
@@ -2730,6 +3631,16 @@
 	)
 	(wire
 		(pts
+			(xy 245.11 113.03) (xy 240.03 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d438d6b-06c9-44e4-b888-23e3e6fcc5c5")
+	)
+	(wire
+		(pts
 			(xy 93.98 110.49) (xy 96.52 110.49)
 		)
 		(stroke
@@ -2750,6 +3661,16 @@
 	)
 	(wire
 		(pts
+			(xy 236.22 149.86) (xy 236.22 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5dd621b8-d1ea-413d-adec-9445448be908")
+	)
+	(wire
+		(pts
 			(xy 25.4 60.96) (xy 31.75 60.96)
 		)
 		(stroke
@@ -2760,7 +3681,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 34.29) (xy 184.15 34.29)
+			(xy 256.54 30.48) (xy 251.46 30.48)
 		)
 		(stroke
 			(width 0)
@@ -2780,7 +3701,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 34.29) (xy 184.15 36.83)
+			(xy 251.46 30.48) (xy 251.46 33.02)
 		)
 		(stroke
 			(width 0)
@@ -2820,6 +3741,16 @@
 	)
 	(wire
 		(pts
+			(xy 245.11 135.89) (xy 236.22 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78621b6f-7811-460e-b0f7-f74cbe726189")
+	)
+	(wire
+		(pts
 			(xy 76.2 123.19) (xy 76.2 128.27)
 		)
 		(stroke
@@ -2840,7 +3771,17 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 30.48) (xy 184.15 31.75)
+			(xy 191.77 115.57) (xy 182.88 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "825a1edb-83d1-4089-a6ed-6585c7c18d6e")
+	)
+	(wire
+		(pts
+			(xy 251.46 26.67) (xy 251.46 27.94)
 		)
 		(stroke
 			(width 0)
@@ -2887,6 +3828,46 @@
 			(type default)
 		)
 		(uuid "8979c5bf-0083-4e1d-8398-3484c550a9cc")
+	)
+	(wire
+		(pts
+			(xy 240.03 132.08) (xy 240.03 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89fa70b6-e160-4a72-8b6c-9e23e80fc29a")
+	)
+	(wire
+		(pts
+			(xy 191.77 156.21) (xy 182.88 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e91b75e-7c69-4927-8905-69e75440757b")
+	)
+	(wire
+		(pts
+			(xy 251.46 50.8) (xy 256.54 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ed76c67-9480-4548-a324-e5cd84a32267")
+	)
+	(wire
+		(pts
+			(xy 186.69 138.43) (xy 191.77 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "924e1812-32bf-4c4c-bfb8-a74a96746c76")
 	)
 	(wire
 		(pts
@@ -2957,6 +3938,16 @@
 			(type default)
 		)
 		(uuid "a07d9e6a-c608-45d4-89b2-23bca10dc3f8")
+	)
+	(wire
+		(pts
+			(xy 236.22 129.54) (xy 236.22 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a79c839c-1b6f-40d0-97c7-81d2f9258a24")
 	)
 	(wire
 		(pts
@@ -3040,6 +4031,56 @@
 	)
 	(wire
 		(pts
+			(xy 236.22 109.22) (xy 236.22 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7ba68db-6c72-41ce-a106-39cbe61a7301")
+	)
+	(wire
+		(pts
+			(xy 251.46 53.34) (xy 251.46 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7f13e94-fc9a-4cdf-b12d-07acbb7f3d93")
+	)
+	(wire
+		(pts
+			(xy 256.54 53.34) (xy 251.46 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b991211d-40a2-43fb-bcde-d5b2dd86342c")
+	)
+	(wire
+		(pts
+			(xy 191.77 135.89) (xy 182.88 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb64d8c7-adab-4883-83fc-5486d7000758")
+	)
+	(wire
+		(pts
+			(xy 186.69 118.11) (xy 191.77 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbe64d2e-f79c-450b-935b-f15f3520ab6e")
+	)
+	(wire
+		(pts
 			(xy 110.49 41.91) (xy 118.11 41.91)
 		)
 		(stroke
@@ -3050,6 +4091,36 @@
 	)
 	(wire
 		(pts
+			(xy 245.11 115.57) (xy 236.22 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdabc8ab-7b12-4624-962f-e6536a6a21d3")
+	)
+	(wire
+		(pts
+			(xy 240.03 118.11) (xy 245.11 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be9cb249-4bb4-4bbe-9422-a45946f2bf5f")
+	)
+	(wire
+		(pts
+			(xy 191.77 153.67) (xy 186.69 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf6057f4-5ed0-4087-a5ec-69848d68a798")
+	)
+	(wire
+		(pts
 			(xy 115.57 123.19) (xy 115.57 128.27)
 		)
 		(stroke
@@ -3057,6 +4128,16 @@
 			(type default)
 		)
 		(uuid "c065fc2c-b8f8-46e7-962c-8688131c7e4f")
+	)
+	(wire
+		(pts
+			(xy 212.09 22.86) (xy 209.55 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c348349b-f1ca-4dfd-bcf0-b09c9e0397e5")
 	)
 	(wire
 		(pts
@@ -3077,6 +4158,16 @@
 			(type default)
 		)
 		(uuid "c47f580e-575d-4306-97a1-2c18964e76dc")
+	)
+	(wire
+		(pts
+			(xy 240.03 158.75) (xy 245.11 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7734ce5-13c6-4c3d-bcea-08d4222d00ec")
 	)
 	(wire
 		(pts
@@ -3140,6 +4231,16 @@
 	)
 	(wire
 		(pts
+			(xy 191.77 133.35) (xy 186.69 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db9722fe-6dfb-4025-877d-b858173f2bf0")
+	)
+	(wire
+		(pts
 			(xy 138.43 41.91) (xy 146.05 41.91)
 		)
 		(stroke
@@ -3147,6 +4248,16 @@
 			(type default)
 		)
 		(uuid "dbfc479f-9865-4c83-a02d-888c440c4143")
+	)
+	(wire
+		(pts
+			(xy 245.11 153.67) (xy 240.03 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd0f0fe0-d344-452b-ad4f-be6d374a275e")
 	)
 	(wire
 		(pts
@@ -3160,6 +4271,16 @@
 	)
 	(wire
 		(pts
+			(xy 234.95 38.1) (xy 234.95 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfdb9b09-ebc1-49d8-ad2b-6727884e190b")
+	)
+	(wire
+		(pts
 			(xy 138.43 80.01) (xy 138.43 83.82)
 		)
 		(stroke
@@ -3170,6 +4291,16 @@
 	)
 	(wire
 		(pts
+			(xy 212.09 38.1) (xy 209.55 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0b3135c-a8d3-4219-addb-9a0296e0ccda")
+	)
+	(wire
+		(pts
 			(xy 96.52 123.19) (xy 96.52 128.27)
 		)
 		(stroke
@@ -3177,6 +4308,36 @@
 			(type default)
 		)
 		(uuid "e274400b-35a9-4154-b87f-8e22569f8a5c")
+	)
+	(wire
+		(pts
+			(xy 209.55 21.59) (xy 209.55 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3c91925-d99b-48aa-be33-b69ebd2d25e0")
+	)
+	(wire
+		(pts
+			(xy 232.41 38.1) (xy 234.95 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5fcb7bd-6f98-4be2-951e-bb8333c282e0")
+	)
+	(wire
+		(pts
+			(xy 232.41 22.86) (xy 234.95 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e74f4c06-04f4-4668-8a86-a5b64e54e0c9")
 	)
 	(wire
 		(pts
@@ -3198,6 +4359,36 @@
 		)
 		(uuid "ecb85ad9-6190-4de2-8f3c-b4e727d07ef5")
 	)
+	(wire
+		(pts
+			(xy 245.11 133.35) (xy 240.03 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f19df062-2af9-485e-9ff7-a7c68a1591a9")
+	)
+	(wire
+		(pts
+			(xy 240.03 138.43) (xy 245.11 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6dd352e-330a-4739-905e-3a195bf80c84")
+	)
+	(label "SERVO_DATA1"
+		(at 186.69 138.43 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify bottom)
+		)
+		(uuid "13b02dbd-9825-47cf-bf86-4ae0339de9f6")
+	)
 	(label "RX2"
 		(at 25.4 53.34 0)
 		(effects
@@ -3207,6 +4398,16 @@
 			(justify left bottom)
 		)
 		(uuid "1915882a-7271-4f2e-8849-42f7f7484927")
+	)
+	(label "SERVO_DATA2"
+		(at 240.03 118.11 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify bottom)
+		)
+		(uuid "20f58289-e273-47f4-ab51-c5151946d296")
 	)
 	(label "RXEN1"
 		(at 146.05 45.72 180)
@@ -3267,6 +4468,16 @@
 			(justify right bottom)
 		)
 		(uuid "4b5c3c36-7e5e-4d0e-b434-ab9c3844f02e")
+	)
+	(label "SERVO_DATA1"
+		(at 186.69 158.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify bottom)
+		)
+		(uuid "558343ff-1f04-4f53-a1f2-358334490f5f")
 	)
 	(label "RX1"
 		(at 25.4 86.36 0)
@@ -3388,6 +4599,16 @@
 		)
 		(uuid "bc7f828a-b6be-40ed-a843-f0370d59772d")
 	)
+	(label "SERVO_DATA2"
+		(at 240.03 138.43 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify bottom)
+		)
+		(uuid "bc8a072e-6fb4-408f-9207-59fc71b44c09")
+	)
 	(label "RXEN2"
 		(at 146.05 34.29 180)
 		(effects
@@ -3458,6 +4679,26 @@
 		)
 		(uuid "f6eaf8c2-1b48-4664-b3e1-54ef0999c0b6")
 	)
+	(label "SERVO_DATA2"
+		(at 240.03 158.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify bottom)
+		)
+		(uuid "f80ac564-171f-443f-8941-c833fdd057d9")
+	)
+	(label "SERVO_DATA1"
+		(at 186.69 118.11 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify bottom)
+		)
+		(uuid "fab15f31-3067-483e-8652-5160f3b2a3a8")
+	)
 	(label "TXEN1"
 		(at 110.49 30.48 0)
 		(effects
@@ -3477,6 +4718,93 @@
 			(justify right bottom)
 		)
 		(uuid "ffa9ea2d-1f11-460b-b1cd-664d356363a6")
+	)
+	(symbol
+		(lib_id "Elements:MOLEX-Connector")
+		(at 245.11 113.03 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0efaa9ca-781f-4831-8fb7-52f65029c2b0")
+		(property "Reference" "J6"
+			(at 259.08 114.2999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MOLEX-Connector"
+			(at 259.08 116.8399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "CONN_22035035_MOL"
+			(at 245.11 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail-pdf/22035035?display=pdf"
+			(at 245.11 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 245.11 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6fb45aec-9267-49a6-9675-c84a5f9b081a")
+		)
+		(pin "3"
+			(uuid "f36576dd-858c-4160-9af2-d18624cdc73b")
+		)
+		(pin "2"
+			(uuid "b0d52e33-75b2-4612-953a-e73ce28079fd")
+		)
+		(instances
+			(project "new_PCB"
+				(path "/5ed5c8ce-6953-4bc3-9eb9-9a26046f37ce"
+					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -3558,7 +4886,7 @@
 	)
 	(symbol
 		(lib_id "power:VBUS")
-		(at 184.15 30.48 0)
+		(at 251.46 26.67 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3569,7 +4897,7 @@
 		(fields_autoplaced yes)
 		(uuid "1a7f36bf-a8e1-424a-80f5-46b7911b942b")
 		(property "Reference" "#PWR014"
-			(at 184.15 34.29 0)
+			(at 251.46 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3580,7 +4908,7 @@
 			)
 		)
 		(property "Value" "VBUS"
-			(at 184.15 25.4 0)
+			(at 251.46 21.59 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3590,7 +4918,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 184.15 30.48 0)
+			(at 251.46 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3601,7 +4929,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 30.48 0)
+			(at 251.46 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3612,7 +4940,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 184.15 30.48 0)
+			(at 251.46 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3636,7 +4964,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 184.15 36.83 0)
+		(at 251.46 33.02 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3647,7 +4975,7 @@
 		(fields_autoplaced yes)
 		(uuid "1c0087bf-e977-4e2b-abb5-bb36c211ed32")
 		(property "Reference" "#PWR015"
-			(at 184.15 43.18 0)
+			(at 251.46 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3658,7 +4986,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 184.15 41.91 0)
+			(at 251.46 38.1 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3668,7 +4996,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 184.15 36.83 0)
+			(at 251.46 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3679,7 +5007,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 36.83 0)
+			(at 251.46 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3690,7 +5018,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 184.15 36.83 0)
+			(at 251.46 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3707,6 +5035,162 @@
 			(project "new_PCB"
 				(path "/5ed5c8ce-6953-4bc3-9eb9-9a26046f37ce"
 					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 186.69 111.76 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2db9a4d1-2e31-41f6-a932-b43796180cf4")
+		(property "Reference" "#PWR023"
+			(at 186.69 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 186.69 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 186.69 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 186.69 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9303bf5d-f4de-4ba6-ad59-d1f5a44b3dbf")
+		)
+		(instances
+			(project "new_PCB"
+				(path "/5ed5c8ce-6953-4bc3-9eb9-9a26046f37ce"
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 186.69 132.08 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "319052c1-5d5f-45e8-ad93-b786fd3f6d72")
+		(property "Reference" "#PWR025"
+			(at 186.69 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 186.69 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 186.69 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 186.69 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "49788d94-82c3-4722-903d-376925e275a4")
+		)
+		(instances
+			(project "new_PCB"
+				(path "/5ed5c8ce-6953-4bc3-9eb9-9a26046f37ce"
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -3873,6 +5357,162 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 209.55 21.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "371de6d4-65da-420c-8d31-95371b801766")
+		(property "Reference" "#PWR019"
+			(at 209.55 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 209.55 16.51 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 209.55 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 209.55 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 209.55 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2d453458-cf9f-4b2b-99d2-2c01490128d2")
+		)
+		(instances
+			(project "new_PCB"
+				(path "/5ed5c8ce-6953-4bc3-9eb9-9a26046f37ce"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 234.95 21.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3a085881-c698-4286-aa73-e2fd5d2f594e")
+		(property "Reference" "#PWR016"
+			(at 234.95 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 234.95 16.51 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 234.95 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 234.95 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 234.95 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8152e196-d434-4372-8b2d-e360f985eeec")
+		)
+		(instances
+			(project "new_PCB"
+				(path "/5ed5c8ce-6953-4bc3-9eb9-9a26046f37ce"
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 115.57 93.98 0)
 		(unit 1)
@@ -3945,6 +5585,93 @@
 			(project "new_PCB"
 				(path "/5ed5c8ce-6953-4bc3-9eb9-9a26046f37ce"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Elements:MOLEX-Connector")
+		(at 191.77 153.67 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3aa649f8-1a59-4c6b-b30a-f8ed18bb5583")
+		(property "Reference" "J5"
+			(at 205.74 154.9399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MOLEX-Connector"
+			(at 205.74 157.4799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "CONN_22035035_MOL"
+			(at 191.77 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail-pdf/22035035?display=pdf"
+			(at 191.77 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 191.77 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d1289285-63ee-4ee5-a0b4-44ceb3f16468")
+		)
+		(pin "3"
+			(uuid "5720cfbb-0b28-40d0-a57c-9bce67d3fee6")
+		)
+		(pin "2"
+			(uuid "0e2c93b1-ac46-4f02-8126-561e1745017c")
+		)
+		(instances
+			(project "new_PCB"
+				(path "/5ed5c8ce-6953-4bc3-9eb9-9a26046f37ce"
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -4033,6 +5760,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VBUS")
+		(at 251.46 49.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "45cbf401-fc96-4d7a-b435-1dee1c9d560f")
+		(property "Reference" "#PWR020"
+			(at 251.46 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 251.46 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 251.46 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 251.46 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 251.46 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "eee2784b-62a4-47a3-bc6c-edb80f7976a2")
+		)
+		(instances
+			(project "new_PCB"
+				(path "/5ed5c8ce-6953-4bc3-9eb9-9a26046f37ce"
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 96.52 119.38 0)
 		(unit 1)
@@ -4115,6 +5920,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 240.03 111.76 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4ec4cb49-691f-47d1-85f1-c85a2a00ea50")
+		(property "Reference" "#PWR031"
+			(at 240.03 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 240.03 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 240.03 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 240.03 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dfbe35ac-52ce-4e44-a657-f99ae7525a87")
+		)
+		(instances
+			(project "new_PCB"
+				(path "/5ed5c8ce-6953-4bc3-9eb9-9a26046f37ce"
+					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 76.2 110.49 0)
 		(unit 1)
@@ -4187,6 +6070,93 @@
 			(project "new_PCB"
 				(path "/5ed5c8ce-6953-4bc3-9eb9-9a26046f37ce"
 					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Elements:MOLEX-Connector")
+		(at 191.77 133.35 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "594c4b6c-5da8-44ef-8015-56386ee53e41")
+		(property "Reference" "J4"
+			(at 205.74 134.6199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MOLEX-Connector"
+			(at 205.74 137.1599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "CONN_22035035_MOL"
+			(at 191.77 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail-pdf/22035035?display=pdf"
+			(at 191.77 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 191.77 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "779789a1-36c0-4f03-bc8a-cef0026b310a")
+		)
+		(pin "3"
+			(uuid "b345eb1e-f54f-4132-a8c2-0a900a417bc0")
+		)
+		(pin "2"
+			(uuid "cad55771-4075-4c36-be79-dc90594eaeb0")
+		)
+		(instances
+			(project "new_PCB"
+				(path "/5ed5c8ce-6953-4bc3-9eb9-9a26046f37ce"
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -4837,8 +6807,242 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VBUS")
+		(at 236.22 149.86 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "684f15c8-8c99-44ce-b557-3dbf5dcab552")
+		(property "Reference" "#PWR030"
+			(at 236.22 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 236.22 144.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 236.22 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 236.22 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 236.22 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "89b034ed-ee45-4d96-990d-6c6d392bfc39")
+		)
+		(instances
+			(project "new_PCB"
+				(path "/5ed5c8ce-6953-4bc3-9eb9-9a26046f37ce"
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 182.88 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "78e6daa9-c86f-4062-84c3-440209305480")
+		(property "Reference" "#PWR024"
+			(at 182.88 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 182.88 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 182.88 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 182.88 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4397bcc6-5c43-4849-881b-ba9860c0305d")
+		)
+		(instances
+			(project "new_PCB"
+				(path "/5ed5c8ce-6953-4bc3-9eb9-9a26046f37ce"
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 236.22 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "79789f59-5224-48ea-a015-6e3d82603323")
+		(property "Reference" "#PWR029"
+			(at 236.22 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 236.22 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 236.22 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 236.22 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 236.22 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00d64b72-391b-4603-b2c4-cb5b88a070a6")
+		)
+		(instances
+			(project "new_PCB"
+				(path "/5ed5c8ce-6953-4bc3-9eb9-9a26046f37ce"
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Elements:XT60PW-F")
-		(at 199.39 34.29 0)
+		(at 266.7 30.48 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4849,7 +7053,7 @@
 		(fields_autoplaced yes)
 		(uuid "7dcb1ce4-589c-4382-a773-91047599aebd")
 		(property "Reference" "J1"
-			(at 205.74 34.2899 0)
+			(at 273.05 30.4799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4860,7 +7064,7 @@
 			)
 		)
 		(property "Value" "XT60PW-F"
-			(at 205.74 36.8299 0)
+			(at 273.05 33.0199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4870,8 +7074,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "XT60PW-F:AMASS_XT60PW-F"
-			(at 199.39 34.29 0)
+		(property "Footprint" "Elements:AMASS-XT60PW-F"
+			(at 266.7 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4883,7 +7087,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 199.39 34.29 0)
+			(at 266.7 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4894,7 +7098,7 @@
 			)
 		)
 		(property "Description" "Connector: DC supply; socket; female; XT60; 30A; 500V; PIN: 2; THT"
-			(at 199.39 34.29 0)
+			(at 266.7 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4906,7 +7110,7 @@
 			)
 		)
 		(property "MF" "AMASS"
-			(at 199.39 34.29 0)
+			(at 266.7 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4918,7 +7122,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "8.4 mm"
-			(at 199.39 34.29 0)
+			(at 266.7 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4930,7 +7134,7 @@
 			)
 		)
 		(property "CREATOR" "KARTHIK"
-			(at 199.39 34.29 0)
+			(at 266.7 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4942,7 +7146,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 199.39 34.29 0)
+			(at 266.7 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4954,7 +7158,7 @@
 			)
 		)
 		(property "Package" "Package"
-			(at 199.39 34.29 0)
+			(at 266.7 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4966,7 +7170,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/XT60PW-F/AMASS/view-part/?ref=eda"
-			(at 199.39 34.29 0)
+			(at 266.7 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4978,7 +7182,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendation"
-			(at 199.39 34.29 0)
+			(at 266.7 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4990,7 +7194,7 @@
 			)
 		)
 		(property "PARTREV" "1.2"
-			(at 199.39 34.29 0)
+			(at 266.7 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5002,7 +7206,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/XT60PW-F/AMASS/view-part/?ref=snap"
-			(at 199.39 34.29 0)
+			(at 266.7 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5014,7 +7218,7 @@
 			)
 		)
 		(property "MP" "XT60PW-F"
-			(at 199.39 34.29 0)
+			(at 266.7 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5026,7 +7230,7 @@
 			)
 		)
 		(property "Availability" "Not in stock"
-			(at 199.39 34.29 0)
+			(at 266.7 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5038,7 +7242,7 @@
 			)
 		)
 		(property "MANUFACTURER" "AMASS"
-			(at 199.39 34.29 0)
+			(at 266.7 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5149,6 +7353,104 @@
 		)
 	)
 	(symbol
+		(lib_id "Elements:MP1584EN")
+		(at 222.25 30.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8381710a-4cf2-4196-a8cf-6691128820a8")
+		(property "Reference" "U2"
+			(at 222.25 16.51 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 222.25 30.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Elements:MP1584EN"
+			(at 222.25 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 222.25 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 222.25 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "1619d7cc-fcce-4064-8997-ae315998e8bd")
+		)
+		(pin "3"
+			(uuid "a73ab4de-0de8-415e-9d40-012eac12d9e7")
+		)
+		(pin "1"
+			(uuid "58fefd75-1347-4d13-8c93-73407f3def98")
+		)
+		(pin "2"
+			(uuid "26322016-5bb2-441f-bbe3-d1094701f029")
+		)
+		(pin "4"
+			(uuid "84024d27-369b-4983-9448-206d61b52204")
+		)
+		(pin "6"
+			(uuid "03fd4b1f-1703-48cc-932b-63534b5b2c4e")
+		)
+		(pin "7"
+			(uuid "3cfd2bb6-5bcd-4ff1-a23a-1e821034f119")
+		)
+		(pin "8"
+			(uuid "a91e795b-8e48-427e-8cb6-881c339afae2")
+		)
+		(instances
+			(project "new_PCB"
+				(path "/5ed5c8ce-6953-4bc3-9eb9-9a26046f37ce"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 146.05 30.48 0)
 		(unit 1)
@@ -5228,6 +7530,84 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 209.55 39.37 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "868d9fb4-99d9-456e-b14b-03f62b723816")
+		(property "Reference" "#PWR018"
+			(at 209.55 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 209.55 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 209.55 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 209.55 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 209.55 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c05a19c2-3e0b-4582-a28c-54db5c29a9e8")
+		)
+		(instances
+			(project "new_PCB"
+				(path "/5ed5c8ce-6953-4bc3-9eb9-9a26046f37ce"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 115.57 128.27 0)
 		(unit 1)
 		(body_style 1)
@@ -5299,6 +7679,93 @@
 			(project "new_PCB"
 				(path "/5ed5c8ce-6953-4bc3-9eb9-9a26046f37ce"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Elements:MOLEX-Connector")
+		(at 191.77 113.03 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "93ec5ae3-16c0-4892-b9df-3523b3f45c12")
+		(property "Reference" "J3"
+			(at 205.74 114.2999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MOLEX-Connector"
+			(at 205.74 116.8399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "CONN_22035035_MOL"
+			(at 191.77 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail-pdf/22035035?display=pdf"
+			(at 191.77 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 191.77 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b4effa51-05d4-4953-85fd-dc954fe938fe")
+		)
+		(pin "3"
+			(uuid "383bb03e-9334-42e9-b0c7-5ffcb7af761c")
+		)
+		(pin "2"
+			(uuid "bf738b22-7eb9-4d0a-9728-84e52db560a1")
+		)
+		(instances
+			(project "new_PCB"
+				(path "/5ed5c8ce-6953-4bc3-9eb9-9a26046f37ce"
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -5421,6 +7888,93 @@
 		)
 	)
 	(symbol
+		(lib_id "Elements:MOLEX-Connector")
+		(at 245.11 153.67 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a9c1ec2b-b96f-4688-ba84-f78a8905fedc")
+		(property "Reference" "J8"
+			(at 259.08 154.9399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MOLEX-Connector"
+			(at 259.08 157.4799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "CONN_22035035_MOL"
+			(at 245.11 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail-pdf/22035035?display=pdf"
+			(at 245.11 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 245.11 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b88e4c32-0256-4398-b3f5-96c137ef9f83")
+		)
+		(pin "3"
+			(uuid "68bc1ebc-bb16-4299-83ab-30a13ce7d326")
+		)
+		(pin "2"
+			(uuid "973ec3ad-fe6c-4577-bcc0-b19c3f8eac69")
+		)
+		(instances
+			(project "new_PCB"
+				(path "/5ed5c8ce-6953-4bc3-9eb9-9a26046f37ce"
+					(reference "J8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 96.52 128.27 0)
 		(unit 1)
@@ -5499,6 +8053,249 @@
 		)
 	)
 	(symbol
+		(lib_id "Elements:MOLEX-Connector")
+		(at 245.11 133.35 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ac4307a4-fc77-4d2f-9cea-b2f8e182dad7")
+		(property "Reference" "J7"
+			(at 259.08 134.6199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MOLEX-Connector"
+			(at 259.08 137.1599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "CONN_22035035_MOL"
+			(at 245.11 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail-pdf/22035035?display=pdf"
+			(at 245.11 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 245.11 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8d475f20-eaba-4dbe-93c5-52d4831b2b78")
+		)
+		(pin "3"
+			(uuid "890c1fab-4a0a-4409-aa8b-412a3822b165")
+		)
+		(pin "2"
+			(uuid "2b0eac4e-f494-43b7-b662-90e4ed8f99e7")
+		)
+		(instances
+			(project "new_PCB"
+				(path "/5ed5c8ce-6953-4bc3-9eb9-9a26046f37ce"
+					(reference "J7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 186.69 152.4 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bfaf292f-33cb-4915-b94c-ce58761eb13e")
+		(property "Reference" "#PWR027"
+			(at 186.69 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 186.69 147.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 186.69 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 186.69 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7676ae2b-af93-442e-91b3-b1b6df6063dc")
+		)
+		(instances
+			(project "new_PCB"
+				(path "/5ed5c8ce-6953-4bc3-9eb9-9a26046f37ce"
+					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 182.88 109.22 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c6918c24-f698-4422-8e23-7cf478a4b345")
+		(property "Reference" "#PWR022"
+			(at 182.88 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 182.88 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 182.88 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 182.88 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4ce80bed-cb97-4f44-9790-8c098491e432")
+		)
+		(instances
+			(project "new_PCB"
+				(path "/5ed5c8ce-6953-4bc3-9eb9-9a26046f37ce"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 76.2 138.43 0)
 		(unit 1)
@@ -5571,6 +8368,84 @@
 			(project "new_PCB"
 				(path "/5ed5c8ce-6953-4bc3-9eb9-9a26046f37ce"
 					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 251.46 55.88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c8fa7622-2ce2-4467-b09f-068efc0e12c9")
+		(property "Reference" "#PWR021"
+			(at 251.46 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 251.46 60.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 251.46 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 251.46 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 251.46 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6a93e1a1-b725-4e57-9de6-eaffc5d22b41")
+		)
+		(instances
+			(project "new_PCB"
+				(path "/5ed5c8ce-6953-4bc3-9eb9-9a26046f37ce"
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -5893,6 +8768,396 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 234.95 39.37 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e41d83d2-25bd-4cd7-9ce8-aa4c65562e6d")
+		(property "Reference" "#PWR017"
+			(at 234.95 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 234.95 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 234.95 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 234.95 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 234.95 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "eed2847a-4afc-4278-b33d-aaf14b1f6bc4")
+		)
+		(instances
+			(project "new_PCB"
+				(path "/5ed5c8ce-6953-4bc3-9eb9-9a26046f37ce"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 240.03 152.4 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e664d309-b088-428a-b2ed-40bb07d42bca")
+		(property "Reference" "#PWR033"
+			(at 240.03 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 240.03 147.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 240.03 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 240.03 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5fcb0ad0-b384-46d1-bb9a-97ccf69ea6e1")
+		)
+		(instances
+			(project "new_PCB"
+				(path "/5ed5c8ce-6953-4bc3-9eb9-9a26046f37ce"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Elements:XT60PW-F")
+		(at 266.7 53.34 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "edc019e5-8e26-4270-92e8-9585dc9425d6")
+		(property "Reference" "J2"
+			(at 273.05 53.3399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "XT60PW-F"
+			(at 273.05 55.8799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Elements:AMASS-XT60PW-F"
+			(at 266.7 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 266.7 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Connector: DC supply; socket; female; XT60; 30A; 500V; PIN: 2; THT"
+			(at 266.7 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MF" "AMASS"
+			(at 266.7 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "8.4 mm"
+			(at 266.7 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "CREATOR" "KARTHIK"
+			(at 266.7 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Price" "None"
+			(at 266.7 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Package" "Package"
+			(at 266.7 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/XT60PW-F/AMASS/view-part/?ref=eda"
+			(at 266.7 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendation"
+			(at 266.7 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "PARTREV" "1.2"
+			(at 266.7 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/XT60PW-F/AMASS/view-part/?ref=snap"
+			(at 266.7 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MP" "XT60PW-F"
+			(at 266.7 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Availability" "Not in stock"
+			(at 266.7 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MANUFACTURER" "AMASS"
+			(at 266.7 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(pin "2"
+			(uuid "3ad8c69c-6fe7-441f-825d-9b0a642bf0ad")
+		)
+		(pin "SH1"
+			(uuid "34cb9170-e237-4792-a658-e877e12a76ba")
+		)
+		(pin "1"
+			(uuid "24d166b4-7ccb-4c26-9810-39b4c69f66be")
+		)
+		(pin "SH2"
+			(uuid "c4fd4e2d-2881-4691-b2a8-aa1367db4636")
+		)
+		(instances
+			(project "new_PCB"
+				(path "/5ed5c8ce-6953-4bc3-9eb9-9a26046f37ce"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 146.05 68.58 0)
 		(unit 1)
@@ -5965,6 +9230,240 @@
 			(project "new_PCB"
 				(path "/5ed5c8ce-6953-4bc3-9eb9-9a26046f37ce"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 236.22 109.22 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f332d04b-d9bd-449a-937b-e3d8042a6420")
+		(property "Reference" "#PWR028"
+			(at 236.22 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 236.22 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 236.22 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 236.22 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 236.22 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5e88fc57-a43b-4815-9f38-2fd37b62fc98")
+		)
+		(instances
+			(project "new_PCB"
+				(path "/5ed5c8ce-6953-4bc3-9eb9-9a26046f37ce"
+					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 182.88 149.86 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fab5b082-3a65-4bb8-bdfd-2c5b0d1cd70a")
+		(property "Reference" "#PWR026"
+			(at 182.88 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 182.88 144.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 182.88 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 182.88 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "18186e86-a529-4c43-abc3-06e30266c9de")
+		)
+		(instances
+			(project "new_PCB"
+				(path "/5ed5c8ce-6953-4bc3-9eb9-9a26046f37ce"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 240.03 132.08 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fe50b587-bbe3-42a9-85dd-282e38f62c11")
+		(property "Reference" "#PWR032"
+			(at 240.03 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 240.03 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 240.03 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 240.03 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "70dd24fe-bd27-45f0-b6a7-1d20bf5f7db0")
+		)
+		(instances
+			(project "new_PCB"
+				(path "/5ed5c8ce-6953-4bc3-9eb9-9a26046f37ce"
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
