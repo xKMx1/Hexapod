@@ -4409,7 +4409,7 @@
 		)
 		(uuid "20f58289-e273-47f4-ab51-c5151946d296")
 	)
-	(label "RXEN1"
+	(label "TXEN2"
 		(at 146.05 45.72 180)
 		(effects
 			(font
@@ -4429,7 +4429,7 @@
 		)
 		(uuid "2afd273a-7acb-4120-86b1-8d90183831f8")
 	)
-	(label "RXEN2"
+	(label "RXEN1"
 		(at 110.49 80.01 0)
 		(effects
 			(font
@@ -4439,17 +4439,17 @@
 		)
 		(uuid "30b3380e-f1d7-410e-a96b-2a7c93479bba")
 	)
-	(label "SERVO_DATA2"
+	(label "RX1"
 		(at 110.49 49.53 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify bottom)
+			(justify left bottom)
 		)
 		(uuid "31f98374-e4e6-4237-b184-7f3db2a8b648")
 	)
-	(label "RXEN1"
+	(label "RXEN2"
 		(at 110.49 72.39 0)
 		(effects
 			(font
@@ -4489,13 +4489,13 @@
 		)
 		(uuid "5a7c3d83-e530-4787-a3cb-20c1ade2de0a")
 	)
-	(label "SERVO_DATA1"
-		(at 146.05 49.53 0)
+	(label "TX2"
+		(at 146.05 49.53 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify bottom)
+			(justify right bottom)
 		)
 		(uuid "5f914faa-0842-4879-8745-de9452545568")
 	)
@@ -4509,7 +4509,7 @@
 		)
 		(uuid "695d5423-05cd-4244-9b25-e647f476aac8")
 	)
-	(label "TXEN2"
+	(label "TXEN1"
 		(at 110.49 76.2 0)
 		(effects
 			(font
@@ -4529,13 +4529,13 @@
 		)
 		(uuid "705022f8-b8f7-49d7-b506-d2ec11d8b3f4")
 	)
-	(label "RX1"
-		(at 146.05 53.34 180)
+	(label "SERVO_DATA2"
+		(at 146.05 53.34 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify bottom)
 		)
 		(uuid "77a65399-eb3d-4008-ada4-b785d79e21ad")
 	)
@@ -4579,17 +4579,17 @@
 		)
 		(uuid "96a494fe-e964-4cce-930e-d76efd46a4c2")
 	)
-	(label "TX2"
+	(label "SERVO_DATA1"
 		(at 110.49 45.72 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify bottom)
 		)
 		(uuid "98fe5037-e127-4107-8ebe-bcf6bcf6470b")
 	)
-	(label "TXEN1"
+	(label "TXEN2"
 		(at 110.49 68.58 0)
 		(effects
 			(font
@@ -4659,7 +4659,7 @@
 		)
 		(uuid "e75e9146-11f4-47af-96dd-7bdb71ed3568")
 	)
-	(label "TXEN2"
+	(label "RXEN1"
 		(at 110.49 41.91 0)
 		(effects
 			(font
