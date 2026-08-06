@@ -60,13 +60,13 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.5,
+          "min_clearance": 0.3,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
           "pad_connection": 1,
           "remove_islands": 0,
-          "thermal_relief_gap": 0.5,
-          "thermal_relief_spoke_width": 0.5
+          "thermal_relief_gap": 0.3,
+          "thermal_relief_spoke_width": 0.3
         }
       },
       "diff_pair_dimensions": [
@@ -76,7 +76,28 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "courtyards_overlap|112185000|47315000|6301f272-d032-4e61-a9fe-00020825caa2|ab73a5bf-a569-4fb6-8c36-66ce918eee7f",
+          ""
+        ],
+        [
+          "courtyards_overlap|124520000|47315000|3ba1f573-05b7-485b-bb3f-c6e9dcb272b8|6301f272-d032-4e61-a9fe-00020825caa2",
+          ""
+        ],
+        [
+          "courtyards_overlap|135950000|47315000|6301f272-d032-4e61-a9fe-00020825caa2|6fc09ef3-cc61-4645-b4f4-75b574bea9d3",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|25290000|37884250|a496f517-037c-4e10-bd92-8612afbe44fd|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|25290000|65989250|44777c50-4503-4359-b6d9-e1e6df4ec52a|00000000-0000-0000-0000-000000000000",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -146,7 +167,7 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
+        "min_clearance": 0.2,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
@@ -211,8 +232,10 @@
       ],
       "track_widths": [
         0.0,
-        0.45,
-        2.7
+        0.25,
+        1.5,
+        2.7,
+        3.5
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -543,7 +566,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "../gerbers/",
       "specctra_dsn": "",
       "vrml": ""
     },
@@ -667,7 +690,7 @@
         "uuid": "5ed5c8ce-6953-4bc3-9eb9-9a26046f37ce"
       }
     ],
-    "used_designators": "H1-4",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
