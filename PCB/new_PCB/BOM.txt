@@ -1,0 +1,13 @@
+ESP32 - 	X
+74LVC125A1 - 	X
+74LVC14A1 - 	X
+MP1584EN 	- https://allegro.pl/produkt/przetwornica-mini-przetwornica-step-down-mp1584en-dc-dc-08426702-a157-47a2-a5d0-7ee040a4bd89?offerId=18598409556
+2x XT60 	- https://www.tme.eu/pl/details/xt60pw-m/zlacza-dc/amass/
+6x MOLEX Con 	-  X - check
+2x AOD407 	- https://www.tme.eu/pl/details/aod407/tranzystory-z-kanalem-p-smd/alpha-omega-semiconductor/
+8x R10k 0805 	- https://www.tme.com/pl/details/smd0805-10k-1%25/smd-resistors/royalohm/0805s8f1002t5e/
+R100k 0805 	- https://www.tme.com/pl/details/smd0805-100k-1%25/smd-resistors/royalohm/0805s8f1003t5e/
+R22k 0805 	- https://www.tme.com/pl/details/0805s8f2202t5e/smd-resistors/royalohm/
+R1k 0805 	- https://www.tme.com/pl/details/smd0805-1k-1%25/smd-resistors/royalohm/0805s8f1001t5e/
+2x C100nF 	- https://www.tme.com/pl/details/0805b104k500ct/mlcc-smd-capacitors/walsin/ 
+C100uF 		- https://www.tme.com/pl/details/ce-100_25pht-y/tht-electrolytic-capacitors/aishi/ewh1ev101e11ot/
