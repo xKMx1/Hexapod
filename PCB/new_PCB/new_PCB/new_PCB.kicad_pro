@@ -568,6 +568,7 @@
       "netlist": "",
       "plot": "../gerbers/",
       "specctra_dsn": "",
+      "step": "",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -690,7 +691,7 @@
         "uuid": "5ed5c8ce-6953-4bc3-9eb9-9a26046f37ce"
       }
     ],
-    "used_designators": "",
+    "used_designators": "#FLG1-9,SW1-2,R12-13,#PWR19,#PWR37,#PWR39-53,D1-4,C4-20",
     "variants": []
   },
   "sheets": [

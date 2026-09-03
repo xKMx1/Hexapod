@@ -109,7 +109,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin tri_state line
 				(at -10.16 3.81 0)
 				(length 2.54)
 				(name "1Y"
@@ -163,7 +163,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin tri_state line
 				(at -10.16 -7.62 0)
 				(length 2.54)
 				(name "2Y"
@@ -181,7 +181,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_in line
 				(at -10.16 -11.43 0)
 				(length 2.54)
 				(name "GND"
@@ -199,7 +199,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin tri_state line
 				(at 10.16 -11.43 180)
 				(length 2.54)
 				(name "3Y"
@@ -253,7 +253,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin tri_state line
 				(at 10.16 0 180)
 				(length 2.54)
 				(name "4Y"
@@ -307,7 +307,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_in line
 				(at 10.16 11.43 180)
 				(length 2.54)
 				(name "VCC"
@@ -417,7 +417,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin output line
 				(at -10.16 7.62 0)
 				(length 2.54)
 				(name "1Y"
@@ -453,7 +453,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin output line
 				(at -10.16 0 0)
 				(length 2.54)
 				(name "2Y"
@@ -489,7 +489,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin output line
 				(at -10.16 -7.62 0)
 				(length 2.54)
 				(name "3Y"
@@ -507,7 +507,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_in line
 				(at -10.16 -11.43 0)
 				(length 2.54)
 				(name "GND"
@@ -525,7 +525,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin output line
 				(at 10.16 -11.43 180)
 				(length 2.54)
 				(name "4Y"
@@ -561,7 +561,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin output line
 				(at 10.16 -3.81 180)
 				(length 2.54)
 				(name "5Y"
@@ -597,7 +597,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin output line
 				(at 10.16 3.81 180)
 				(length 2.54)
 				(name "6Y"
@@ -633,7 +633,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_in line
 				(at 10.16 11.43 180)
 				(length 2.54)
 				(name "VCC"
@@ -886,43 +886,6 @@
 				)
 				(fill
 					(type background)
-				)
-			)
-			(pin power_in line
-				(at 22.86 27.94 180)
-				(length 5.08)
-				(name "3V3"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "J1_1"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 22.86 27.94 180)
-				(length 5.08)
-				(hide yes)
-				(name "3V3"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "J1_2"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
 				)
 			)
 			(pin input line
@@ -1242,24 +1205,6 @@
 					)
 				)
 				(number "J1_20"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 22.86 30.48 180)
-				(length 5.08)
-				(name "5V0"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "J1_21"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -1685,6 +1630,497 @@
 				)
 			)
 		)
+		(symbol "ESP32-S3-DEVKITC-1-N16R8V_1_0"
+			(pin power_in line
+				(at 22.86 27.94 180)
+				(length 5.08)
+				(name "+3V3"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "J1_1"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 22.86 27.94 180)
+				(length 5.08)
+				(hide yes)
+				(name "+3V3"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "J1_2"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 22.86 30.48 180)
+				(length 5.08)
+				(name "+5V"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "J1_21"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "FFC-Connector"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "FFC-Connector_1_1"
+			(rectangle
+				(start -26.67 5.08)
+				(end 24.13 -1.905)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin power_out line
+				(at 22.86 7.62 270)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 20.32 7.62 270)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 17.78 7.62 270)
+				(length 2.54)
+				(name "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 15.24 7.62 270)
+				(length 2.54)
+				(name "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 12.7 7.62 270)
+				(length 2.54)
+				(name "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 10.16 7.62 270)
+				(length 2.54)
+				(name "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 7.62 7.62 270)
+				(length 2.54)
+				(name "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 5.08 7.62 270)
+				(length 2.54)
+				(name "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 2.54 7.62 270)
+				(length 2.54)
+				(name "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 0 7.62 270)
+				(length 2.54)
+				(name "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -2.54 7.62 270)
+				(length 2.54)
+				(name "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -5.08 7.62 270)
+				(length 2.54)
+				(name "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 7.62 270)
+				(length 2.54)
+				(name "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 7.62 270)
+				(length 2.54)
+				(name "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 7.62 270)
+				(length 2.54)
+				(name "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 7.62 270)
+				(length 2.54)
+				(name "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -17.78 7.62 270)
+				(length 2.54)
+				(name "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -20.32 7.62 270)
+				(length 2.54)
+				(name "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -22.86 7.62 270)
+				(length 2.54)
+				(name "19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at -25.4 7.62 270)
+				(length 2.54)
+				(name "20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
 		(embedded_fonts no)
 	)
 	(symbol "MOLEX-Connector"
@@ -1717,7 +2153,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CONN_22035035_MOL"
+		(property "Footprint" "Elements:CONN_22035035_MOL"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1746,16 +2182,6 @@
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "ki_locked" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1941,7 +2367,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin power_in line
 				(at 0 0 0)
 				(length 5.08)
 				(name "1"
@@ -1959,7 +2385,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin power_in line
 				(at 0 -2.54 0)
 				(length 5.08)
 				(name "2"
@@ -1977,7 +2403,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at 0 -5.08 0)
 				(length 5.08)
 				(name "3"
@@ -2281,7 +2707,7 @@
 					(type background)
 				)
 			)
-			(pin input line
+			(pin power_out line
 				(at -10.16 7.62 0)
 				(length 2.54)
 				(name "OUT+"
@@ -2299,7 +2725,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_out line
 				(at -10.16 3.81 0)
 				(length 2.54)
 				(name "OUT+"
@@ -2317,7 +2743,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_out line
 				(at -10.16 -3.81 0)
 				(length 2.54)
 				(name "OUT-"
@@ -2335,7 +2761,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_out line
 				(at -10.16 -7.62 0)
 				(length 2.54)
 				(name "OUT-"
@@ -2353,7 +2779,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_in line
 				(at 10.16 -7.62 180)
 				(length 2.54)
 				(name "IN-"
@@ -2371,7 +2797,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_in line
 				(at 10.16 -3.81 180)
 				(length 2.54)
 				(name "IN-"
@@ -2389,7 +2815,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_in line
 				(at 10.16 3.81 180)
 				(length 2.54)
 				(name "IN+"
@@ -2407,7 +2833,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin power_in line
 				(at 10.16 7.62 180)
 				(length 2.54)
 				(name "IN+"

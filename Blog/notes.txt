@@ -1,0 +1,7 @@
+Changes:
+- Changed schematics for chips and switching converter
+- Widened ESP32 footprint
+- Reconnected 74LVC14A1 and added capacitor
+- Reconnected BAT_LVL to GPIO1 which has ADC
+- Changed R3 and R4 from pull down to pull up not to drive the port when esp32 is booting
+- 
