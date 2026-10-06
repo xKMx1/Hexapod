@@ -73,7 +73,7 @@
 					(type background)
 				)
 			)
-			(pin power_out line
+			(pin passive line
 				(at 23.495 8.255 270)
 				(length 2.54)
 				(name "1"
@@ -415,7 +415,7 @@
 					)
 				)
 			)
-			(pin power_out line
+			(pin passive line
 				(at -24.765 8.255 270)
 				(length 2.54)
 				(name "20"

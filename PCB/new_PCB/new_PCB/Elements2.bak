@@ -73,7 +73,7 @@
 					(type background)
 				)
 			)
-			(pin power_out line
+			(pin passive line
 				(at 23.495 8.255 270)
 				(length 2.54)
 				(name "1"
@@ -415,7 +415,7 @@
 					)
 				)
 			)
-			(pin power_out line
+			(pin passive line
 				(at -24.765 8.255 270)
 				(length 2.54)
 				(name "20"
@@ -467,7 +467,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "TPS563201DDCR:SOT95P280X110-6N"
+		(property "Footprint" "moje_elementy:SOT95P280X110-6N"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -648,8 +648,8 @@
 		)
 		(symbol "TPS563201DDCR_0_0"
 			(rectangle
-				(start -10.16 -10.16)
-				(end 10.16 10.16)
+				(start -10.16 10.16)
+				(end 10.16 -10.16)
 				(stroke
 					(width 0.254)
 					(type default)
